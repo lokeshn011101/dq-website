@@ -4,6 +4,7 @@ import "tailwindcss/tailwind.css";
 import "../styles/navbar.css";
 import "../styles/footer.css";
 import "../styles/home.css";
+import "../styles/common.css";
 
 function Home({ Component, pageProps }) {
   return (
@@ -23,6 +24,8 @@ function Home({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
           rel="stylesheet"
         />
+
+        <link href="/fonts/style.css" rel="stylesheet" />
 
         <title>Design Quotient</title>
       </Head>
