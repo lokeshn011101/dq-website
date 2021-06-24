@@ -138,8 +138,11 @@ const Home = () => {
             <Image src="/flow1.png" width={473} height={194} />
           </div>
         </div>
-        <div data-aos="zoom-down">
+        <div>
           <QuoteTile
+            data_aos_text="fade-down"
+            data_aos_button="fade-up"
+            data_aos_button-delay="250"
             text="Every event from a birthday to a wedding can be transformed from just a small idea to a magical experience! Take a look at the
 services we offer and get in touch so we can discuss how to accommodate your requirements!"
             buttext="OUR SERVICES"

@@ -47,7 +47,7 @@ const MobileAccordion = ({
               className="w-full text-right pt-2 accordion-text "
               onClick={() => setNaveToggle(!navToggle)}
             >
-              <Link href={`/treatments/${item[0]}`} className="uppercase">
+              <Link href={`/services/${item[0]}`} className="uppercase">
                 {item[1]}
               </Link>
             </div>
@@ -61,7 +61,7 @@ const MobileAccordion = ({
 const Helper = ({ route, text }) => {
   return (
     <li className="menu-item">
-      <Link href={`/treatments/${route}`}>{text}</Link>
+      <Link href={`/services/${route}`}>{text}</Link>
     </li>
   );
 };
@@ -153,7 +153,10 @@ const Navbar = () => {
             <nav className="navvv">
               <ul className="cf">
                 <li>
-                  <div className="hhhh cursor-pointer">SERVICES</div>
+                  {/* <div className="hhhh cursor-pointer">SERVICES</div> */}
+                  <Link href="/services" className="text-black text-md">
+                    SERVICES
+                  </Link>
                   <ul className="navrenup">
                     <RenderItem data={data} />
                   </ul>
