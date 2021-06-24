@@ -12,12 +12,12 @@ const MobileAccordion = ({
   setNaveToggle,
 }) => {
   const data = [
-    ["curated-decor", "Curated decor"],
-    ["themed-event-design", "Themed event design"],
-    ["floristry", "Floristry"],
-    ["luxury-wedding-design", "Luxury Wedding Design"],
-    ["kids-parties", "Kids Parties"],
-    ["customised-packaging", "Customised Packaging"],
+    ["#curated-decor", "Curated decor"],
+    ["#themed-event-design", "Themed event design"],
+    ["#floristry", "Floristry"],
+    ["#luxury-wedding-design", "Luxury Wedding Design"],
+    ["#kids-parties", "Kids Parties"],
+    ["#customised-packaging", "Customised Packaging"],
   ];
   return (
     <div>
@@ -98,12 +98,12 @@ const Navbar = () => {
   }, []);
 
   const data = [
-    ["curated-decor", "Curated decor"],
-    ["themed-event-design", "Themed event design"],
-    ["floristry", "Floristry"],
-    ["luxury-wedding-design", "Luxury Wedding Design"],
-    ["kids-parties", "Kids Parties"],
-    ["customised-packaging", "Customised Packaging"],
+    ["#curated-decor", "Curated decor"],
+    ["#themed-event-design", "Themed event design"],
+    ["#floristry", "Floristry"],
+    ["#luxury-wedding-design", "Luxury Wedding Design"],
+    ["#kids-parties", "Kids Parties"],
+    ["#customised-packaging", "Customised Packaging"],
   ];
   return (
     <nav className="navbaar sticky top-0 navbar-container w-full h-auto flex justify-end z-50">
@@ -145,7 +145,7 @@ const Navbar = () => {
           </div>
           <div
             className={`${
-              router.pathname.includes("/services/")
+              router.pathname.includes("/services")
                 ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3 relative dropdown headerdrp"
                 : "relative dropdown headerdrp py-3 px-4"
             }`}
@@ -206,7 +206,7 @@ const Navbar = () => {
         <>
           <div
             ref={ref}
-            className="toggler overflow-scroll overflow-x-hidden fixed top-0 lg:hidden animate-slide h-screen shadow-2xl bg-skin-light z-10 w-64"
+            className="navbar-mobile-toggle overflow-scroll overflow-x-hidden fixed top-0 lg:hidden h-screen shadow-2xl bg-white z-10 w-64"
           >
             <div className="absolute w-4 h-4 right-5 top-3">
               <button

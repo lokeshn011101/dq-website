@@ -1,11 +1,12 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
+import "../styles/navbar.css";
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
-import "../styles/navbar.css";
 import "../styles/footer.css";
 import "../styles/home.css";
 import "../styles/common.css";
+import "../styles/contact.css";
 import "aos/dist/aos.css";
 
 function Home({ Component, pageProps }) {
@@ -22,7 +23,11 @@ function Home({ Component, pageProps }) {
         <meta name="keywords" content="Design Quotient" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
           rel="stylesheet"

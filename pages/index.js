@@ -108,7 +108,7 @@ const Home = () => {
             data-aos="fade-up"
           >
             <div>~</div>
-            <div className="headings text-center mx-2 font-adelia ">
+            <div className="headings text-center mx-2 smm:my-2 font-adelia ">
               {" "}
               Where Dreams, Come Alive!{" "}
             </div>

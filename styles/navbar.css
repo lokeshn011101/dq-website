@@ -22,8 +22,19 @@ ol {
   display: block;
   color: #000;
 }
+.navrenup li:first-child a {
+  border-radius: 5px 5px 0 0 !important;
+}
+.navrenup li:last-child a {
+  border-radius: 0 0 5px 5px !important;
+}
+.navrenup li a {
+  background-color: white;
+}
+.navrenup li a:hover {
+  background-color: #feeff1;
+}
 .sub-menu .menu-item {
-  background: #fff7f5;
   opacity: 0;
   animation: enter 0.1s ease forwards;
 }
@@ -51,33 +62,6 @@ ol {
   animation-duration: 0.7s;
   animation-delay: 0.5s;
 }
-.sub-menu .menu-item:nth-child(7) {
-  animation-duration: 0.8s;
-  animation-delay: 0.6s;
-}
-.sub-menu .menu-item:nth-child(8) {
-  animation-duration: 0.9s;
-  animation-delay: 0.7s;
-}
-.sub-menu .menu-item:nth-child(9) {
-  animation-duration: 1s;
-  animation-delay: 0.8s;
-}
-.sub-menu .menu-item:nth-child(10) {
-  animation-duration: 1.1s;
-  animation-delay: 0.9s;
-}
-.sub-menu .menu-item:nth-child(11) {
-  animation-duration: 1.2s;
-  animation-delay: 1s;
-}
-.sub-menu .menu-item:nth-child(12) {
-  animation-duration: 1.3s;
-  animation-delay: 1.1s;
-}
-.sub-menu .menu-item:hover {
-  background: #ebcabe;
-}
 
 .sub-menu {
   position: absolute;
@@ -87,9 +71,9 @@ ol {
   display: none;
   z-index: 1;
 }
-/* .menu-item-t:hover + .sub-menu {
+.menu-item-t:hover + .sub-menu {
   display: block;
-} */
+}
 .menu-item-t {
   outline: none !important;
   outline-width: 0;
@@ -152,18 +136,11 @@ a {
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-.dropdown:hover .navvv li a {
-  background: #fff7f5;
-}
-.headerdrp:hover {
-  background-color: #fff7f5;
-}
 .navvv li ul {
   float: left;
-  left: -75%;
+  left: -95%;
   top: 0;
   width: 200%;
-  margin-top: 0.5rem;
   opacity: 0;
   position: absolute;
   visibility: hidden;
@@ -174,18 +151,15 @@ a {
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-.dropdown:hover .navvv li ul {
+.dropdown:hover .navvv ul li ul {
   opacity: 1;
-  top: 155.5%;
-  left: -75%;
+  top: 190%;
+  left: -95%;
   visibility: visible;
 }
 .navvv li ul li {
   float: none;
   width: 150%;
-}
-.navvv li ul a:hover {
-  background: #ebcabe;
 }
 .cf:after,
 .cf:before {
@@ -194,9 +168,6 @@ a {
 }
 .cf:after {
   clear: both;
-}
-.navrenup li a:hover {
-  background: #ebcabe;
 }
 .menu-item a {
   padding: 0.5rem !important;
@@ -218,4 +189,20 @@ a {
 }
 .navbaar {
   z-index: 999 !important;
+}
+
+.navbar-mobile-toggle {
+  animation: slide 1s ease-out !important;
+}
+
+@keyframes slide {
+  0% {
+    width: "0%";
+  }
+  50% {
+    width: "8rem";
+  }
+  100% {
+    width: "16rem";
+  }
 }

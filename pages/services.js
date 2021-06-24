@@ -4,14 +4,14 @@ import Image from "next/image";
 import AOS from "aos";
 import { useEffect } from "react";
 
-const ServicesItem = ({ title, imgg, linkto, desc }) => {
+const ServicesItem = ({ title, imgg, linkto, desc, idd }) => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
     });
   }, []);
   return (
-    <div className="services-item">
+    <div className="services-item" id={idd}>
       <div
         className="text-3xl flex flex-row smm:flex-col justify-center items-center lg:my-8 md:my-6 sm:my-5 smm:my-4"
         data-aos="fade-up"
@@ -68,6 +68,7 @@ const Services = () => {
       "Bespoke is the blueprint. If you want one-of-a-kind decor, look no further. We specialize in highly personalized, handmade decor so the sky is the limit here! No detail is too small or too big when it comes to realizing your vision for the event of your dreams! We believe in sustainable design, which means building props by hand, locally, and reusing with thought and care to minimize our carbon footprint.",
       "/curated-decor-serv.png",
       "/curated-decor",
+      "curated-decor",
     ],
 
     [
@@ -75,18 +76,21 @@ const Services = () => {
       "We approach each project with a fresh perspective and strive to create design concepts that adhere to the theme and also feel specific to each client. We do our best to identify their personal taste and then infuse that into the theme to make the event all the more special.",
       "/themed-event-design-serv.png",
       "/themed-event-design",
+      "themed-event-design",
     ],
     [
       "Floristry",
       "The benefit of having our in-house team for floristry is that we can incorporate the surrounding landscape and details of the location into our design so that the flowers work seamlessly within their setting. We are very keen on supporting local vendors and always like to use seasonal flowers, local to the area- they also have the added benefit of being at their freshest and fullest bloom!",
       "/floristry-serv.png",
       "/floristry",
+      "floristry",
     ],
     [
       "Luxury Wedding Design",
       "Luxury with heart, a splash of whimsy, and lots of personality. We want to infuse your individual stories and personalities into your wedding day through thoughtful and meaningful design. We offer unparalleled style and luxurious design for weddings at any scale.",
       "/luxury-wedding-design-serv.png",
       "/luxury-wedding-design",
+      "luxury-wedding-design",
     ],
 
     [
@@ -94,6 +98,7 @@ const Services = () => {
       "Want to throw a party befitting your little prince or princess? From show-stopping first birthdays to kiddie parties themed after whatever your little one can’t stop talking about (cowboys, space… cowboys in space?) We’re ready to take on the challenge and help you make them the happiest kid in the world for a day!",
       "/kids-parties-serv.png",
       "/kids-parties",
+      "kids-parties",
     ],
 
     [
@@ -101,6 +106,7 @@ const Services = () => {
       "Because sometimes it's okay to judge a book by its cover! Why shouldn't your wedding favours or return gifts look just as spectacular as your event decor!",
       "/customised-packaging-serv.png",
       "/customised-packaging",
+      "customised-packaging",
     ],
   ];
   return (
@@ -129,7 +135,13 @@ const Services = () => {
         </div>
       </div>
       {data.map((el, i) => (
-        <ServicesItem title={el[0]} desc={el[1]} imgg={el[2]} linkto={el[3]} />
+        <ServicesItem
+          title={el[0]}
+          desc={el[1]}
+          imgg={el[2]}
+          linkto={el[3]}
+          idd={el[4]}
+        />
       ))}
     </div>
   );

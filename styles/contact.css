@@ -1,0 +1,16 @@
+.contact {
+  height: 50rem;
+  background-image: url("../public/contact-bg.png");
+}
+.cn-form {
+  background: rgba(255, 255, 255, 0.8);
+}
+input[type="text"],
+textarea {
+  background: transparent;
+  outline: none;
+}
+.submit-button {
+  border-width: 2px;
+  border-color: #e89eab;
+}
