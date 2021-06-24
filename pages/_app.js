@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
+import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
 import "../styles/navbar.css";
 import "../styles/footer.css";
@@ -21,12 +22,16 @@ function Home({ Component, pageProps }) {
         <meta name="keywords" content="Design Quotient" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap"
+          rel="stylesheet"
+        />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link href="/fonts/style.css" rel="stylesheet" />
 
         <title>Design Quotient</title>
       </Head>

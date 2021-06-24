@@ -23,15 +23,10 @@ module.exports = {
         mdd: { max: "768px" },
       },
       fontFamily: {
-        montserrat: {
-          normal: ["Montserrat", "sans-serif"],
-        },
-        playfare: {
-          normal: ["Playfair Display", "serif"],
-        },
-        raleway: {
-          normal: ["Raleway", "sans-serif"],
-        },
+        montserrat: ["Montserrat", "sans-serif"],
+        playfare: ["Playfair Display", "serif"],
+        raleway: ["Raleway", "sans-serif"],
+        adelia: ["Adelia"],
       },
       keyframes: {
         slide: {

@@ -1,3 +1,14 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
+@font-face {
+  font-family: "Adelia";
+  src: url("../public/fonts/adelia.ttf");
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+
+html {
+  font-family: "Montserrat", sans-serif !important;
+}
