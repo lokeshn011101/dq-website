@@ -26,7 +26,6 @@ const ServicesItem = ({ title, imgg, linkto, desc }) => {
       <div
         className="services-image flex justify-center items-center"
         data-aos="fade-up"
-        data-aos-delay="200"
       >
         <div className="w-9/12 smm:w-full flex justify-center items-center">
           <Image src={imgg} width={1640} height={900} />
@@ -35,14 +34,12 @@ const ServicesItem = ({ title, imgg, linkto, desc }) => {
       <div
         className="services-description text-center lg:mt-8 md:mt-7 sm:mt-6 smm:mt-5 lg:w-8/12 md:w-9/12 sm:w-10/12 smm:w-11/12 md:leading-8 leading-6 md:text-lg text-base font-light mx-auto"
         data-aos="fade-up"
-        data-aos-delay="300"
       >
         {desc}
       </div>
       <div
         className="services-link flex justify-center items-center lg:my-10 md:my-8 sm:my-7 smm:my-6"
         data-aos="fade-up"
-        data-aos-delay="400"
       >
         <Link href={linkto}>VIEW GALLERY</Link>
       </div>
