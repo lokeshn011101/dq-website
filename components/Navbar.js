@@ -106,8 +106,8 @@ const Navbar = () => {
     ["customised-packaging", "Customised Packaging"],
   ];
   return (
-    <nav className="sticky top-0 navbar-container w-full h-auto flex justify-end z-10">
-      <div className="bg-skin-lightWithOpacity flex justify-center w-full  lg:items-end lg:flex-row shadow-sm">
+    <nav className="navbaar sticky top-0 navbar-container w-full h-auto flex justify-end z-50">
+      <div className="bg-white flex justify-center w-full  lg:items-end lg:flex-row shadow-sm">
         <div className="smm:ml-2 smm:w-4/12 lgg:w-3/12 lgg:h-auto w-2/12 h-full flex justify-center items-center lgg:items-end">
           <div className="nav-logo w-full flex justify-center items-center">
             <Image
@@ -124,7 +124,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/"
-                ? "border-4 border-t-0 border-l-0 border-r-0 border-green-500 px-4 py-3"
+                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3"
                 : ""
             }`}
           >
@@ -135,7 +135,7 @@ const Navbar = () => {
           <div
             className={` h-full ${
               router.pathname === "/about"
-                ? "border-4 border-t-0 border-l-0 border-r-0 border-green-500 px-4 py-3"
+                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3"
                 : ""
             }`}
           >
@@ -146,7 +146,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname.includes("/services/")
-                ? "border-4 border-t-0 border-l-0 border-r-0 border-green-500 px-4 py-3 relative dropdown headerdrp"
+                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3 relative dropdown headerdrp"
                 : "relative dropdown headerdrp py-3 px-4"
             }`}
           >
@@ -165,7 +165,7 @@ const Navbar = () => {
             className={`${
               router.pathname.includes("/gallery/") ||
               router.pathname === "/gallery"
-                ? "border-4 border-t-0 border-l-0 border-r-0 border-green-500 px-4 py-3"
+                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3"
                 : ""
             }`}
           >
@@ -176,7 +176,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/contact"
-                ? "border-4 border-t-0 border-l-0 border-r-0 border-green-500 px-4 py-3"
+                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3"
                 : ""
             }`}
           >

@@ -213,3 +213,9 @@ a {
 .divimgg {
   width: fit-content;
 }
+.border-pink {
+  border-color: #e89eab;
+}
+.navbaar {
+  z-index: 999 !important;
+}
