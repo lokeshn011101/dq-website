@@ -1,20 +1,15 @@
 import React from "react";
-import Image from "next/image";
 import styles from "../styles/About.module.css";
+import Link from 'next/link';
 
 const About = () => {
   return (
     <div>
       <div className={styles.bg}>
         <div className={styles.container}>
-          <h1 className={styles.title}>Meet diya</h1>
+          <h1 className={styles.title}>Meet Dhiya</h1>
           <div className={styles.person}>
-            <Image
-              src="/diya.png"
-              className={styles.image}
-              width={400}
-              height={450}
-            />
+            <img src="/diya.png" className={styles.image} />
             <div className={styles.content}>
               <p>
                 Each event is carefully designed and coordinated by our founder{" "}
@@ -35,15 +30,10 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className={styles.title}>Leaf</div>
+          <img src="/flow2.png" className={styles.leaf} />
           <h1 className={styles.title}>and Roshan</h1>
           <div className={styles.person}>
-            <Image
-              src="/roshan.png"
-              className={styles.image}
-              width={400}
-              height={450}
-            />
+          <img src="/roshan.png" className={styles.image} />
             <div className={styles.content}>
               <p>
                 The brain behind the business side of things here at DQ,{" "}
@@ -68,7 +58,7 @@ const About = () => {
             services we offer and get in touch so we can discuss how to
             accommodate your requirements!
           </p>
-          <button className={styles.button}>OUR SERVICES</button>
+          <Link href="/services"><button className={styles.button}>OUR SERVICES</button></Link>
         </div>
       </div>
     </div>
