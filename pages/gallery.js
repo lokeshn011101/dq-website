@@ -5,15 +5,11 @@ const Gallery = () => {
   return (
     <div className={styles.container}>
       <div className={styles.row}>
-        <div>
-          
-        </div>
-        <div>
-
-        </div>
+        <div>gallery</div>
+        <div></div>
       </div>
     </div>
-  )
+  );
 };
 
 export default Gallery;

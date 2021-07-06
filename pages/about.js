@@ -1,6 +1,7 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import styles from "../styles/About.module.css";
 import QuoteTile from "../components/QuoteTile";
+import Image from "next/image";
 import AOS from "aos";
 
 const About = () => {
@@ -13,11 +14,32 @@ const About = () => {
     <div>
       <div className={styles.bg}>
         <div className={styles.container}>
-          <h1 className={styles.title} data-aos="fade-right">Meet Dhiya</h1>
+          <h1 className={styles.title} data-aos="fade-left">
+            Meet Dhiya
+          </h1>
           <div className={styles.person}>
-            <img src="/diya.png" className={styles.image} data-aos="fade-up"/>
+            {/* <img
+              src="/diya.png"
+              className={styles.image}
+              data-aos="fade-left"
+              data-aos-delay="500"
+            /> */}
+            <div className="flex justify-start items-center mdd:w-full md:w-6/12 overflow-hidden">
+              <div
+                className="flex justify-start items-center"
+                data-aos="fade-left"
+                data-aos-delay="500"
+              >
+                <Image
+                  src="/diya.png"
+                  width={656}
+                  height={900}
+                  className={styles.image}
+                />
+              </div>
+            </div>
             <div className={styles.content}>
-              <p data-aos="fade-up">
+              <p data-aos="fade-right" data-aos-delay="500">
                 Each event is carefully designed and coordinated by our founder{" "}
                 <span className={styles.bold}>Dhiya D’Rosario </span>
                 Her strength is to take care of all the little things you hadn’t
@@ -36,12 +58,29 @@ const About = () => {
               </p>
             </div>
           </div>
-          <img src="/flow2.png" className={styles.leaf} data-aos="fade-in"/>
-          <h1 className={styles.title} data-aos="fade-left">and Roshan</h1>
+          <img src="/flow2.png" className={styles.leaf} data-aos="fade-in" />
+          <div className="overflow-hidden">
+            <h1 className={styles.title} data-aos="fade-left">
+              and Roshan
+            </h1>
+          </div>
           <div className={styles.person}>
-          <img src="/roshan.png" className={styles.image} data-aos="fade-down" data-aos-duration="2000"/>
+            <div className="flex justify-start items-center mdd:w-full md:w-6/12 overflow-hidden">
+              <div
+                className="flex justify-start items-center"
+                data-aos="fade-left"
+                data-aos-delay="500"
+              >
+                <Image
+                  src="/roshan.png"
+                  width={656}
+                  height={900}
+                  className={styles.image}
+                />
+              </div>
+            </div>
             <div className={styles.content}>
-              <p data-aos="fade-down">
+              <p data-aos="fade-right">
                 The brain behind the business side of things here at DQ,{" "}
                 <span className={styles.bold}>Roshan Kalyan </span> takes care
                 of the logistics behind the whole operation and with her MBA

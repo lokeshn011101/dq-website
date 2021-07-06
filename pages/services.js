@@ -112,8 +112,11 @@ const Services = () => {
   return (
     <div className="services">
       <div className="services-banner flex justify-center items-center ">
-        <div className="w-full flex justify-center items-center">
+        <div className="w-full flex justify-center items-center relative">
           <Image src="/services-banner.png" width={1920} height={973} />
+        </div>
+        <div className="setxt absolute text-white font-adelia text-center lg:text-3xl md:text-2xl sm:text-xl">
+          ~ Thoughtful and Authentic moments ~
         </div>
       </div>
       <div
