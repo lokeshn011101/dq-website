@@ -4,7 +4,9 @@
     margin-top: 50px;
 }
 
-.row{
-    display: flex;
-
+.row1{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: min-content;
+    grid-gap: 20px;
 }
