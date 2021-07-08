@@ -21,6 +21,8 @@ module.exports = {
         smm: { max: "640px" },
         lgg: { max: "1023px" },
         mdd: { max: "768px" },
+        vsmm: { max: "425px" },
+        vsm: { min: "425px" },
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],

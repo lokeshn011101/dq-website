@@ -15,7 +15,7 @@
   font-family: adelia;
 }
 
-.leaf{
+.leaf {
   margin: auto;
   width: 120px;
   height: 100px;
@@ -45,7 +45,6 @@
 .bold {
   font-weight: bold;
 }
-
 
 .servicecontainer {
   margin-top: 80px;
@@ -81,6 +80,7 @@
     width: 100%;
     padding-left: 0px;
     padding-top: 15px;
+    text-align: center;
   }
   .service {
     width: 80%;
