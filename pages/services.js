@@ -115,7 +115,7 @@ const Services = () => {
         <div className="w-full flex justify-center items-center relative">
           <Image src="/services-banner.png" width={1920} height={973} />
         </div>
-        <div className="setxt absolute text-white font-adelia text-center lg:text-3xl md:text-2xl sm:text-xl">
+        <div className="setxt absolute text-white font-adelia text-center lg:text-4xl md:text-2xl sm:text-xl">
           ~ Thoughtful and Authentic moments ~
         </div>
       </div>

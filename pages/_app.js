@@ -37,7 +37,19 @@ function Home({ Component, pageProps }) {
           rel="stylesheet"
         />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+          @font-face {
+          font-family: "Adelia";
+          src: url("../public/fonts/adelia.ttf");
+          font-style: normal;
+          font-weight: 200;
+          font-display: swap;
+        }
+        `,
+          }}
+        />
         <title>Design Quotient</title>
       </Head>
       <Layout>
