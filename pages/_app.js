@@ -50,6 +50,10 @@ function Home({ Component, pageProps }) {
         `,
           }}
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap"
+          rel="stylesheet"
+        />
         <title>Design Quotient</title>
       </Head>
       <Layout>

@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import QuoteTile from "../components/QuoteTile";
 import AOS from "aos";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const HomeSlider = () => {
   useEffect(() => {
@@ -91,10 +91,17 @@ const HomeFooterItem = ({ comment, by, place }) => {
 };
 
 const Home = () => {
+  const [winWidth, setWinWidth] = useState(0);
+  const [x1, setX1] = useState(-10);
+  const [x2, setX2] = useState(100);
+  const [y1, setY1] = useState(-90);
+  const [y2, setY2] = useState(-130);
   useEffect(() => {
     AOS.init({
       duration: 1000,
     });
+    setWinWidth(window.innerWidth);
+    if (window.innerWidth <= 450) setX2(160);
   }, []);
   return (
     <ParallaxProvider>
@@ -107,12 +114,16 @@ const Home = () => {
             className="text-3xl mb-10 mt-24 flex flex-row smm:flex-col justify-center items-center"
             data-aos="fade-up"
           >
-            <div>~</div>
-            <div className="headings text-center mx-2 smm:my-2 font-adelia ">
+            <div className=" font-clickscript md:text-7xl text-6xl font-medium">
+              ~
+            </div>
+            <div className="headings text-center mx-2 smm:my-2 font-clickscript md:text-7xl text-6xl font-medium">
               {" "}
               Where Dreams, Come Alive!{" "}
             </div>
-            <div>~</div>
+            <div className=" font-clickscript md:text-7xl text-6xl font-medium">
+              ~
+            </div>
           </div>
           <div
             className="text-center w-8/12 mdd:w-full md:leading-10 leading-6 md:text-lg text-base font-light"
@@ -163,9 +174,16 @@ services we offer and get in touch so we can discuss how to accommodate your req
             className="home-footer-title text-3xl mb-10 mt-16 flex flex-row smm:flex-col justify-center items-center"
             data-aos="fade-up"
           >
-            <div>~</div>
-            <div className="text-center mx-2 font-adelia"> Testimonials </div>
-            <div>~</div>
+            <div className=" font-clickscript md:text-7xl text-6xl font-medium">
+              ~
+            </div>
+            <div className="text-center mx-2 font-clickscript md:text-7xl text-6xl font-medium">
+              {" "}
+              Testimonials{" "}
+            </div>
+            <div className=" font-clickscript md:text-7xl text-6xl font-medium">
+              ~
+            </div>
           </div>
 
           <div className="flex justify-center items-center w-full ">
@@ -178,7 +196,7 @@ services we offer and get in touch so we can discuss how to accommodate your req
             </div>
           </div>
 
-          <Parallax className="custom-class" y={[-10, 100]} tagOuter="figure">
+          <Parallax className="custom-class" y={[x1, x2]} tagOuter="figure">
             <div className="flex justify-start items-end w-full lg:pl-30 md:pl-24 sm:pl-14 smm:pl-5">
               <div className="flex justify-start items-start lg:w-full md:w-8/12 sm:w-7/12 smm:w-3/12 z-0">
                 <Image src="/left.png" width={213} height={350} />
@@ -212,7 +230,7 @@ Thank you Dhiya for also always making it super easy and stressfree to plan birt
               place=" Chennai"
             />
           </div>
-          <Parallax className="custom-class" y={[-90, -130]} tagOuter="figure">
+          <Parallax className="custom-class" y={[y1, y2]} tagOuter="figure">
             <div className="flex justify-end items-end w-full lg:pr-30 md:pr-24 sm:pr-14 smm:pr-5">
               <div className="flex justify-end items-end lg:w-full md:w-8/12 sm:w-7/12 smm:w-3/12 z-0">
                 <Image src="/right.png" width={213} height={350} />

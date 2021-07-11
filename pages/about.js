@@ -14,7 +14,10 @@ const About = () => {
     <div>
       <div className={styles.bg}>
         <div className={styles.container}>
-          <h1 className={styles.title} data-aos="fade-left">
+          <h1
+            className="title font-clickscript md:text-7xl text-6xl font-medium text-center py-12"
+            data-aos="fade-left"
+          >
             Meet Dhiya
           </h1>
           <div className={styles.person}>
@@ -60,7 +63,10 @@ const About = () => {
           </div>
           <img src="/flow2.png" className={styles.leaf} data-aos="fade-in" />
           <div className="overflow-hidden">
-            <h1 className={styles.title} data-aos="fade-left">
+            <h1
+              className="title font-clickscript md:text-7xl text-6xl font-medium text-center py-12"
+              data-aos="fade-left"
+            >
               and Roshan
             </h1>
           </div>
