@@ -117,7 +117,7 @@ const Home = () => {
             <div className=" font-clickscript md:text-7xl text-6xl font-medium">
               ~
             </div>
-            <div className="headings text-center mx-2 smm:my-2 font-clickscript md:text-7xl text-6xl font-medium">
+            <div className="headings text-center mx-2 smm:my-2 font-adelia md:text-7xl text-6xl font-medium">
               {" "}
               Where Dreams, Come Alive!{" "}
             </div>

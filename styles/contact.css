@@ -1,6 +1,6 @@
 .contact {
   height: 50rem;
-  background-image: url("../public/contact-bg.png");
+  background-image: url("../public/static/contact-bg.png");
 }
 .cn-form {
   background: rgba(255, 255, 255, 0.8);
