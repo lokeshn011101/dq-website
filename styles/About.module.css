@@ -8,12 +8,6 @@
     no-repeat padding-box;
 }
 
-.title {
-  text-align: center;
-  padding: 80px 0px 80px 0px;
-  font-family: "Fuggles", cursive;
-}
-
 .leaf {
   margin: auto;
   width: 120px;

@@ -17,9 +17,7 @@ const ServicesItem = ({ title, imgg, linkto, desc, idd }) => {
         data-aos="fade-up"
       >
         <div>~</div>
-        {/* <div className="headings text-center mx-2 font-adelia lg:my-10 md:my-8 sm:my-7 smm:my-6"> */}
-        <div className="font-clickscript md:text-7xl text-6xl font-medium">
-          {" "}
+        <div className="headings text-center mx-2 font-adelia lg:my-10 md:my-8 sm:my-7 smm:my-6">
           {title}{" "}
         </div>
         <div>~</div>
@@ -118,8 +116,8 @@ const Services = () => {
         <div className="w-full flex justify-center items-center relative">
           <Image src="/services-banner.png" width={1920} height={973} />
         </div>
-        {/* <div className="setxt absolute text-white font-adelia text-center lg:text-4xl md:text-2xl sm:text-xl"> */}
-        <div className="absolute top-1/2 right-0 bottom-1/2 px-8 text-white text-center font-clickscript lg:text-8xl md:text-7xl sm:text-6xl text font-medium">
+        <div className="setxt absolute top-1/2 right-0 bottom-1/2 px-8 text-white font-adelia text-center lg:text-4xl md:text-2xl sm:text-xl">
+          {/* <div className="absolute top-1/2 right-0 bottom-1/2 px-8 text-white text-center font-clickscript lg:text-8xl md:text-7xl sm:text-6xl text font-medium"> */}
           ~ Thoughtful and Authentic moments ~
         </div>
       </div>

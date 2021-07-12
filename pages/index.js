@@ -111,19 +111,15 @@ const Home = () => {
         </div>
         <div className="section md:px-24 sm:px-10 smm:px-8 flex flex-col justify-center items-center">
           <div
-            className="text-3xl mb-10 mt-24 flex flex-row smm:flex-col justify-center items-center"
+            className="text-3xl mb-10 md:mt-24 smm:mt-10 mt-16 flex flex-row smm:flex-col justify-center items-center"
             data-aos="fade-up"
           >
-            <div className=" font-clickscript md:text-7xl text-6xl font-medium">
-              ~
-            </div>
-            <div className="headings text-center mx-2 smm:my-2 font-adelia md:text-7xl text-6xl font-medium">
+            <div className=" font-adelia">~</div>
+            <div className="headings text-center mx-2 smm:my-2 font-adelia">
               {" "}
               Where Dreams, Come Alive!{" "}
             </div>
-            <div className=" font-clickscript md:text-7xl text-6xl font-medium">
-              ~
-            </div>
+            <div className=" font-adelia">~</div>
           </div>
           <div
             className="text-center w-8/12 mdd:w-full md:leading-10 leading-6 md:text-lg text-base font-light"
@@ -174,16 +170,9 @@ services we offer and get in touch so we can discuss how to accommodate your req
             className="home-footer-title text-3xl mb-10 mt-16 flex flex-row smm:flex-col justify-center items-center"
             data-aos="fade-up"
           >
-            <div className=" font-clickscript md:text-7xl text-6xl font-medium">
-              ~
-            </div>
-            <div className="text-center mx-2 font-clickscript md:text-7xl text-6xl font-medium">
-              {" "}
-              Testimonials{" "}
-            </div>
-            <div className=" font-clickscript md:text-7xl text-6xl font-medium">
-              ~
-            </div>
+            <div className=" font-adelia">~</div>
+            <div className="text-center mx-2 font-adelia"> Testimonials </div>
+            <div className=" font-adelia">~</div>
           </div>
 
           <div className="flex justify-center items-center w-full ">

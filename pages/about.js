@@ -15,7 +15,7 @@ const About = () => {
       <div className={styles.bg}>
         <div className={styles.container}>
           <h1
-            className="title font-clickscript md:text-7xl text-6xl font-medium text-center py-12"
+            className="title font-adelia text-center py-12 text-3xl "
             data-aos="fade-left"
           >
             Meet Dhiya
@@ -64,7 +64,7 @@ const About = () => {
           <img src="/flow2.png" className={styles.leaf} data-aos="fade-in" />
           <div className="overflow-hidden">
             <h1
-              className="title font-clickscript md:text-7xl text-6xl font-medium text-center py-12"
+              className="title font-adelia text-center py-12 text-3xl "
               data-aos="fade-left"
             >
               and Roshan
