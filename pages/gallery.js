@@ -4,7 +4,7 @@ import styles from "../styles/Gallery.module.css";
 const Gallery = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.row1}>
+      {/* <div className={styles.row1}>
         <div>
           <img src='/gallery-1.png' />
         </div>
@@ -40,7 +40,8 @@ const Gallery = () => {
         <div>
            <img src='/gallery-9.png' />
         </div>
-      </div>
+      </div> */}
+      gallery
     </div>
   );
 };
