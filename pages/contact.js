@@ -1,6 +1,41 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import AOS from "aos";
+import ReactSelectMaterialUi from "react-select-material-ui";
+
+const Dropdown = ({ setServices }) => {
+  const handleChange = (data) => {
+    console.log(data);
+    setServices(data);
+  };
+
+  const options = [
+    "Curated decor",
+    "Themed event design",
+    "Floristry",
+    "Luxury wedding design",
+    "Kids parties",
+    "Customised packaging",
+    "Others",
+  ];
+
+  return (
+    <div className="ciiservice w-full h-10 bg-none border-2 border-black text-lg">
+      <ReactSelectMaterialUi
+        label={` `}
+        options={options}
+        fullWidth={true}
+        onChange={handleChange}
+        SelectProps={{
+          isCreatable: true,
+          msgNoOptionsAvailable: "All services are selected",
+          msgNoOptionsMatchFilter: "No service matches the filter",
+          closeMenuOnSelect: false,
+        }}
+      />
+    </div>
+  );
+};
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -9,6 +44,7 @@ const Contact = () => {
   const [service, setService] = useState("");
   const [message, setMessage] = useState("");
   const [winWidth, setWinWidth] = useState(0);
+  const [services, setServices] = useState("");
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -64,11 +100,12 @@ const Contact = () => {
           </div>
           <div className="cservice  w-1/2 vsmm:w-10/12 lg:pr-8 vsm:px-5 vsmm:flex vsmm:flex-col vsmm:justify-center vsmm:items-center vsmm:pb-5">
             <div className="ciservice italic text-xl">Select Service*</div>
-            <input
+            {/* <input
               onChange={(txt) => setService(txt)}
               type="text"
               className="ciiservice w-full h-10 bg-none border-2 border-black text-lg"
-            />
+            /> */}
+            <Dropdown setServices={setServices} />
           </div>
         </div>
         <div className="w-full message vsm:px-5 vsmm:flex vsmm:flex-col vsmm:justify-center vsmm:items-center ">

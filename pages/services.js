@@ -18,7 +18,6 @@ const ServicesItem = ({ title, imgg, linkto, desc, idd }) => {
       >
         <div>~</div>
         <div className="headings text-center mx-2 font-adelia lg:my-10 md:my-8 sm:my-7 smm:my-6">
-          {" "}
           {title}{" "}
         </div>
         <div>~</div>
@@ -38,10 +37,12 @@ const ServicesItem = ({ title, imgg, linkto, desc, idd }) => {
         {desc}
       </div>
       <div
-        className="services-link flex justify-center items-center lg:my-10 md:my-8 sm:my-7 smm:my-6"
+        className="services-link flex justify-center items-center lg:my-10 md:my-8 sm:my-7 smm:my-6 "
         data-aos="fade-up"
       >
-        <Link href={linkto}>VIEW GALLERY</Link>
+        <div className="serv-link px-10 py-4 ">
+          <Link href={linkto}>VIEW GALLERY</Link>
+        </div>
       </div>
       <div
         className="services-flower flex justify-center items-center lg:my-16 md:my-14 sm:my-10 smm:my-8"
@@ -115,7 +116,8 @@ const Services = () => {
         <div className="w-full flex justify-center items-center relative">
           <Image src="/services-banner.png" width={1920} height={973} />
         </div>
-        <div className="setxt absolute text-white font-adelia text-center lg:text-3xl md:text-2xl sm:text-xl">
+        <div className="setxt absolute top-1/2 right-0 bottom-1/2 px-8 text-white font-adelia text-center lg:text-4xl md:text-2xl sm:text-xl">
+          {/* <div className="absolute top-1/2 right-0 bottom-1/2 px-8 text-white text-center font-clickscript lg:text-8xl md:text-7xl sm:text-6xl text font-medium"> */}
           ~ Thoughtful and Authentic moments ~
         </div>
       </div>
