@@ -42,14 +42,14 @@ function Home({ Component, pageProps }) {
             __html: `
           @font-face {
             font-family: "Adelia";
-            src: url("../public/fonts/adelia.ttf");
+            src: url("../public/fonts/Adelia/Adelia.ttf");
             font-style: normal;
             font-weight: 200;
             font-display: swap;
           }
           @font-face {
             font-family: "OstrichSans";
-            src: url("../public/fonts/OstrichSans.otf");
+            src: url("../public/fonts/OstrichSans/OstrichSans.otf");
             font-style: normal;
             font-weight: 200;
             font-display: swap;
