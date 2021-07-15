@@ -42,7 +42,7 @@ function Home({ Component, pageProps }) {
             __html: `
           @font-face {
           font-family: "Adelia";
-          src: url("../public/fonts/adelia.ttf");
+          src: url("../public/static/fonts/adelia.ttf");
           font-style: normal;
           font-weight: 200;
           font-display: swap;
@@ -58,10 +58,6 @@ function Home({ Component, pageProps }) {
 
         `,
           }}
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap"
-          rel="stylesheet"
         />
         <title>Design Quotient</title>
       </Head>
