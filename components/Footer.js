@@ -11,25 +11,27 @@ const Footer = () => {
         <div> +91 9840484457</div>
         <div>info@designquotient.net</div>
       </div>
-      <div className="centerft uppercase text-5xl mdd:text-3xl text-white w-3/6 sm:w-2/6 smm:w-full text-center">
+      <div className="centerft uppercase text-5xl mdd:text-3xl text-white w-3/6 sm:w-2/6 smm:w-full text-center font-ostrich tracking-widest">
         design quotient
       </div>
       <div className="rytft flex flex-row justify-around items-center w-1/6 sm:w-2/6 smm:w-full">
-        <img
-          src="/fb.png"
-          alt="facebook"
-          className="fb cursor-pointer w-8 h-8"
-        />
-        <img
-          src="/insta.png"
-          alt="insta"
-          className="fb cursor-pointer w-8 h-8"
-        />
-        <img
-          src="/mail.png"
-          alt="mail"
-          className="fb cursor-pointer w-10 h-6"
-        />
+        <div className="flex flex-row justify-around items-center lg:w-1/3 md:w-2/3 w-2/3 lg:ml-10">
+          <img
+            src="/fb.png"
+            alt="facebook"
+            className="fb cursor-pointer w-8 h-8 mx-4"
+          />
+          <img
+            src="/insta.png"
+            alt="insta"
+            className="fb cursor-pointer w-8 h-8 mx-4"
+          />
+          <img
+            src="/mail.png"
+            alt="mail"
+            className="fb cursor-pointer w-10 h-6 mx-4"
+          />
+        </div>
       </div>
     </div>
   );

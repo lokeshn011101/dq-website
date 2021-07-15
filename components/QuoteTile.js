@@ -7,6 +7,8 @@ import AOS from "aos";
 const QuoteTile = ({
   text,
   buttext,
+  data_aos_bg = "",
+  data_aos_bg_delay = "",
   data_aos_text = "",
   data_aos_button = "",
   data_aos_button_delay = "",
@@ -19,7 +21,11 @@ const QuoteTile = ({
   }, []);
   const router = useRouter();
   return (
-    <div className="servicestile flex flex-col justify-center items-center w-full">
+    <div
+      className="servicestile flex flex-col justify-center items-center w-full"
+      data-aos="fade-in"
+      data-aos-delay={data_aos_bg_delay}
+    >
       <div
         className="text-base md:text-lg text-center lg:w-9/12 md:w-10/12 mdd:w-11/12 lg:py-14 md:py-10 mdd:py-8 md:leading-10 leading-6"
         data-aos={data_aos_text}

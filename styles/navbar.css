@@ -206,3 +206,11 @@ a {
     width: "16rem";
   }
 }
+.blank-border {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.cur-border {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
