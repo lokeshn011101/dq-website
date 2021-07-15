@@ -42,7 +42,7 @@ function Home({ Component, pageProps }) {
             __html: `
           @font-face {
           font-family: "Adelia";
-          src: url("../public/static/fonts/adelia.ttf");
+          src: url("../public/static/fonts/Adelia.ttf");
           font-style: normal;
           font-weight: 200;
           font-display: swap;
