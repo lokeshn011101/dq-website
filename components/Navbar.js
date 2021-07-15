@@ -124,7 +124,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/"
-                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3"
+                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3 rounded"
                 : "border-4 border-t-0 border-l-0 border-r-0 border-white px-4 py-3"
             }`}
           >
@@ -135,7 +135,7 @@ const Navbar = () => {
           <div
             className={` h-full ${
               router.pathname === "/about"
-                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3"
+                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3 rounded"
                 : "border-4 border-t-0 border-l-0 border-r-0 border-white px-4 py-3"
             }`}
           >
@@ -146,7 +146,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname.includes("/services")
-                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3 relative dropdown headerdrp"
+                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3 relative dropdown headerdrp rounded"
                 : "border-4 border-t-0 border-l-0 border-r-0 border-white relative dropdown headerdrp py-3 px-4"
             }`}
           >
@@ -167,7 +167,7 @@ const Navbar = () => {
             className={`${
               router.pathname.includes("/gallery/") ||
               router.pathname === "/gallery"
-                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3"
+                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3 rounded"
                 : "border-4 border-t-0 border-l-0 border-r-0 border-white px-4 py-3"
             }`}
           >
@@ -178,7 +178,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/contact"
-                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3"
+                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3 rounded"
                 : "border-4 border-t-0 border-l-0 border-r-0 border-white px-4 py-3"
             }`}
           >
