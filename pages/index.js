@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 const HomeSlider = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 750,
     });
   }, []);
   const settings = {
@@ -65,7 +65,7 @@ const HomeSlider = () => {
 const HomeFooterItem = ({ comment, by, place }) => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 750,
     });
   }, []);
   return (
@@ -104,7 +104,7 @@ const Home = () => {
   const [y2, setY2] = useState(-130);
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 750,
     });
     setWinWidth(window.innerWidth);
     if (window.innerWidth <= 450) setX2(160);

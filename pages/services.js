@@ -7,7 +7,7 @@ import { useEffect } from "react";
 const ServicesItem = ({ title, imgg, linkto, desc, idd }) => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 750,
     });
   }, []);
   return (
@@ -60,7 +60,7 @@ const ServicesItem = ({ title, imgg, linkto, desc, idd }) => {
 const Services = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 750,
     });
   }, []);
   const data = [
@@ -113,12 +113,11 @@ const Services = () => {
   return (
     <div className="services">
       <div className="services-banner flex justify-center items-center ">
-        <div className="w-full flex justify-center items-center relative">
+        <div className="w-full relative flex justify-center items-center">
           <Image src="/services-banner.png" width={1920} height={973} />
-        </div>
-        <div className="setxt absolute top-1/2 right-0 bottom-1/2 px-8 text-white font-adelia text-center lg:text-4xl md:text-2xl sm:text-xl">
-          {/* <div className="absolute top-1/2 right-0 bottom-1/2 px-8 text-white text-center font-clickscript lg:text-8xl md:text-7xl sm:text-6xl text font-medium"> */}
-          ~ Thoughtful and Authentic moments ~
+          <div className="setxt absolute px-8 right-0 text-white font-adelia text-center lg:text-4xl md:text-2xl sm:text-xl smm:text-base ">
+            ~ Thoughtful and Authentic moments ~
+          </div>
         </div>
       </div>
       <div

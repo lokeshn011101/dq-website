@@ -47,7 +47,7 @@ const Contact = () => {
   const [services, setServices] = useState("");
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 750,
     });
     setWinWidth(window.innerWidth);
   }, []);
