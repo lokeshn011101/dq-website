@@ -29,7 +29,7 @@ module.exports = {
         playfare: ["Playfair Display", "serif"],
         raleway: ["Raleway", "sans-serif"],
         adelia: ["Adelia"],
-        clickscript: ["Fuggles", "cursive"],
+        ostrich: ["OstrichSans"],
       },
       keyframes: {
         slide: {
