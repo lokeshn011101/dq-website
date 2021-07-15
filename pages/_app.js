@@ -40,6 +40,15 @@ function Home({ Component, pageProps }) {
         <style
           dangerouslySetInnerHTML={{
             __html: `
+          
+        @font-face {
+          font-family: "OstrichSans";
+          src: url("../public/static/fonts/OstrichSans.otf");
+          font-style: normal;
+          font-weight: 200;
+          font-display: swap;
+        }
+          
           @font-face {
           font-family: "Adelia";
           src: url("../public/static/fonts/Adelia.ttf");
@@ -48,13 +57,6 @@ function Home({ Component, pageProps }) {
           font-display: swap;
         }
         
-        @font-face {
-          font-family: "OstrichSans";
-          src: url("../public/static/fonts/OstrichSans.otf");
-          font-style: normal;
-          font-weight: 200;
-          font-display: swap;
-        }
 
         `,
           }}
