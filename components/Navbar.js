@@ -27,7 +27,14 @@ const MobileAccordion = ({
           setToggleMobile(!toggleMobile);
         }}
       >
-        <h2 className="pr-3 text-right uppercase select-none">SERVICES</h2>
+        <h2
+          className="pr-3 text-right uppercase select-none"
+          onClick={() => setNaveToggle(!navToggle)}
+        >
+          <Link href="/services" className="text-black text-md">
+            SERVICES
+          </Link>
+        </h2>
         <button className="w-1/12">
           <img
             src="/MobDrp.png"
