@@ -1,0 +1,14 @@
+.container{
+ display: flex; 
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+}
+.slider{
+    z-index: 100;
+}
+
+.image{
+    margin: auto;
+    height: 100vh;
+}
