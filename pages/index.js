@@ -16,7 +16,7 @@ const HomeSlider = () => {
   }, []);
   const settings = {
     arrows: true,
-    autoplaySpeed: 3500,
+    autoplaySpeed: 1500,
     autoplay: true,
     infinite: true,
     speed: 500,
