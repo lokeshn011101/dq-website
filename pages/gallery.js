@@ -112,7 +112,10 @@ const Gallery = () => {
       </div>
       <div className="gallery-segment flex flex-row mdd:flex-col justify-around items-center">
         <div>
-          <div className="flex justify-start items-center" data-aos="fade-up">
+          <div
+            className="gallery-element flex justify-start items-center"
+            data-aos="fade-up"
+          >
             <Image width={1640} height={884} src="/gallery-5.png" />
           </div>
         </div>

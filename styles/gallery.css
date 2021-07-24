@@ -10,9 +10,6 @@
   }
 }
 @media (max-width: 769px) {
-  .gallery-segment {
-    margin-bottom: 1.5rem !important;
-  }
   .gallery-container {
     margin: 0.5rem 2rem !important;
   }
