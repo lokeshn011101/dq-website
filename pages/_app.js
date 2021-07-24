@@ -4,6 +4,7 @@ import "../styles/navbar.css";
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
 import "../styles/footer.css";
+import "../styles/gallery.css";
 import "../styles/home.css";
 import "../styles/common.css";
 import "../styles/services.css";
