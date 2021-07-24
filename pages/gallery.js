@@ -86,7 +86,7 @@ const Gallery = () => {
   }, []);
   return (
     <div className="gallery-container flex flex-col justify-center items-center overflow-hidden">
-      <div className="gallery-segment flex flex-row mdd:flex-col justify-around items-center">
+      <div className="gallery-segment flex flex-row  justify-around items-center">
         <div className="gallery-element" data-aos="fade-right">
           <div className="flex justify-start items-center">
             <Image width={1026} height={828} src="/gallery-1.png" />
@@ -98,7 +98,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <div className="gallery-segment flex flex-row mdd:flex-col justify-around items-center">
+      <div className="gallery-segment flex flex-row  justify-around items-center">
         <div className="gallery-element" data-aos="fade-right">
           <div className="flex justify-start items-center">
             <Image width={800} height={828} src="/gallery-3.png" />
@@ -110,7 +110,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <div className="gallery-segment flex flex-row mdd:flex-col justify-around items-center">
+      <div className="gallery-segment flex flex-row  justify-around items-center">
         <div>
           <div
             className="gallery-element flex justify-start items-center"
@@ -120,7 +120,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <div className="gallery-segment flex flex-row mdd:flex-col justify-around items-center">
+      <div className="gallery-segment flex flex-row  justify-around items-center">
         <div className="gallery-element" data-aos="fade-right">
           <div className="flex justify-start items-center">
             <Image width={574} height={828} src="/gallery-6.png" />
@@ -132,7 +132,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <div className="gallery-segment flex flex-row mdd:flex-col justify-around items-center">
+      <div className="gallery-segment flex flex-row  justify-around items-center">
         <div className="gallery-element" data-aos="fade-right">
           <div className="flex justify-start items-center">
             <Image width={800} height={828} src="/gallery-8.png" />
