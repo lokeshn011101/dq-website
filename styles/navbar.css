@@ -192,7 +192,7 @@ a {
 }
 
 .navbar-mobile-toggle {
-  animation: slide 1s ease-out !important;
+  animation: slide 0.3s ease-in-out !important;
 }
 
 @keyframes slide {

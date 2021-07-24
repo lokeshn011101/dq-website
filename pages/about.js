@@ -7,7 +7,7 @@ import AOS from "aos";
 const About = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 750,
     });
   }, []);
   return (
@@ -101,17 +101,15 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className={styles.servicecontainer}>
-        <div>
-          <QuoteTile
-            data_aos_text="fade-down"
-            data_aos_button="fade-up"
-            data_aos_button-delay="250"
-            text="Every event from a birthday to a wedding can be transformed from just a small idea to a magical experience! Take a look at the
+      <div className="lg:my-36 md:my-28 sm:my-20 smm:my-16">
+        <QuoteTile
+          data_aos_text="fade-down"
+          data_aos_button="fade-up"
+          data_aos_button-delay="250"
+          text="Every event from a birthday to a wedding can be transformed from just a small idea to a magical experience! Take a look at the
 services we offer and get in touch so we can discuss how to accommodate your requirements!"
-            buttext="OUR SERVICES"
-          />
-        </div>
+          buttext="OUR SERVICES"
+        />
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 const HomeSlider = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 750,
     });
   }, []);
   const settings = {
@@ -25,32 +25,38 @@ const HomeSlider = () => {
   };
   return (
     <Slider {...settings}>
-      <div className="b1 h-full mx-auto ">
-        <Image
-          src="/b1.png"
-          width={1920}
-          height={1052}
-          className="nav-logo-im cursor-pointer  flex justify-center items-center mx-auto"
-          alt="Design Quotient"
-        />
+      <div className="mx-auto">
+        <div className="b1 h-full mx-auto ">
+          <Image
+            src="/b1.png"
+            width={1920}
+            height={1052}
+            className="nav-logo-im cursor-pointer flex justify-center items-center mx-auto"
+            alt="Design Quotient"
+          />
+        </div>
       </div>
-      <div className="b2 h-full mx-auto ">
-        <Image
-          src="/b2.png"
-          width={1920}
-          height={1052}
-          className="nav-logo-im cursor-pointer flex justify-center items-center  mx-auto"
-          alt="Design Quotient"
-        />
+      <div className="mx-auto">
+        <div className="b2 mx-auto ">
+          <Image
+            src="/b2.png"
+            width={1920}
+            height={1052}
+            className="nav-logo-im cursor-pointer flex justify-center items-center  mx-auto"
+            alt="Design Quotient"
+          />
+        </div>
       </div>
-      <div className="b3 h-full mx-auto ">
-        <Image
-          src="/b3.png"
-          width={1920}
-          height={1052}
-          className="nav-logo-im cursor-pointer flex justify-center items-center  mx-auto"
-          alt="Design Quotient"
-        />
+      <div className="mx-auto">
+        <div className="b3 h-full mx-auto ">
+          <Image
+            src="/b3.png"
+            width={1920}
+            height={1052}
+            className="nav-logo-im cursor-pointer flex justify-center items-center  mx-auto"
+            alt="Design Quotient"
+          />
+        </div>
       </div>
     </Slider>
   );
@@ -59,7 +65,7 @@ const HomeSlider = () => {
 const HomeFooterItem = ({ comment, by, place }) => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 750,
     });
   }, []);
   return (
@@ -98,7 +104,7 @@ const Home = () => {
   const [y2, setY2] = useState(-130);
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 750,
     });
     setWinWidth(window.innerWidth);
     if (window.innerWidth <= 450) setX2(160);
@@ -147,6 +153,7 @@ const Home = () => {
         </div>
         <div>
           <QuoteTile
+            data-aos-bg="fade-in"
             data_aos_text="fade-down"
             data_aos_button="fade-up"
             data_aos_button-delay="250"

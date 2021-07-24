@@ -27,7 +27,14 @@ const MobileAccordion = ({
           setToggleMobile(!toggleMobile);
         }}
       >
-        <h2 className="pr-3 text-right uppercase select-none">SERVICES</h2>
+        <h2
+          className="pr-3 text-right uppercase select-none"
+          onClick={() => setNaveToggle(!navToggle)}
+        >
+          <Link href="/services" className="text-black text-md">
+            SERVICES
+          </Link>
+        </h2>
         <button className="w-1/12">
           <img
             src="/MobDrp.png"
@@ -124,8 +131,8 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/"
-                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3"
-                : ""
+                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3 rounded"
+                : "border-4 border-t-0 border-l-0 border-r-0 border-white px-4 py-3"
             }`}
           >
             <Link href="/" className="text-black text-md mb-5">
@@ -135,8 +142,8 @@ const Navbar = () => {
           <div
             className={` h-full ${
               router.pathname === "/about"
-                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3"
-                : ""
+                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3 rounded"
+                : "border-4 border-t-0 border-l-0 border-r-0 border-white px-4 py-3"
             }`}
           >
             <Link href="/about" className="text-black text-md">
@@ -146,14 +153,13 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname.includes("/services")
-                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3 relative dropdown headerdrp"
-                : "relative dropdown headerdrp py-3 px-4"
+                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3 relative dropdown headerdrp rounded"
+                : "border-4 border-t-0 border-l-0 border-r-0 border-white relative dropdown headerdrp py-3 px-4"
             }`}
           >
             <nav className="navvv">
               <ul className="cf">
                 <li>
-                  {/* <div className="hhhh cursor-pointer">SERVICES</div> */}
                   <Link href="/services" className="text-black text-md">
                     SERVICES
                   </Link>
@@ -168,8 +174,8 @@ const Navbar = () => {
             className={`${
               router.pathname.includes("/gallery/") ||
               router.pathname === "/gallery"
-                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3"
-                : ""
+                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3 rounded"
+                : "border-4 border-t-0 border-l-0 border-r-0 border-white px-4 py-3"
             }`}
           >
             <Link href="/gallery" className="text-black text-md">
@@ -179,8 +185,8 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/contact"
-                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3"
-                : ""
+                ? "border-4 border-t-0 border-l-0 border-r-0 border-pink px-4 py-3 rounded"
+                : "border-4 border-t-0 border-l-0 border-r-0 border-white px-4 py-3"
             }`}
           >
             <Link href="/contact" className="text-black text-md">

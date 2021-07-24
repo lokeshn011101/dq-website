@@ -1,5 +1,5 @@
 module.exports = {
-  mode: "jit",
+  // mode: "jit",
   purge: ["./pages/**/*.js", "./components/**/*.js"],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -29,7 +29,7 @@ module.exports = {
         playfare: ["Playfair Display", "serif"],
         raleway: ["Raleway", "sans-serif"],
         adelia: ["Adelia"],
-        clickscript: ["Fuggles", "cursive"],
+        ostrich: ["OstrichSans"],
       },
       keyframes: {
         slide: {

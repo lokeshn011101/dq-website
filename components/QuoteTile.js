@@ -14,12 +14,15 @@ const QuoteTile = ({
 }) => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 750,
     });
   }, []);
   const router = useRouter();
   return (
-    <div className="servicestile flex flex-col justify-center items-center w-full">
+    <div
+      className="servicestile flex flex-col justify-center items-center w-full"
+      data-aos="fade-in"
+    >
       <div
         className="text-base md:text-lg text-center lg:w-9/12 md:w-10/12 mdd:w-11/12 lg:py-14 md:py-10 mdd:py-8 md:leading-10 leading-6"
         data-aos={data_aos_text}
