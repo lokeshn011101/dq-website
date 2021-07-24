@@ -4,3 +4,6 @@
 .gallery-container {
   margin: 2.5rem 5rem !important;
 }
+.gallery-element {
+  margin-right: 1.5rem;
+}
