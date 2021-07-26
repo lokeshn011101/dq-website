@@ -24,22 +24,6 @@ function Home({ Component, pageProps }) {
         />
         <meta name="description" content="Where dreams come alive" />
         <meta name="keywords" content="Design Quotient" />
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <style
           dangerouslySetInnerHTML={{
             __html: `
@@ -59,6 +43,22 @@ function Home({ Component, pageProps }) {
           }
         `,
           }}
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap"
+          rel="stylesheet"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap"
