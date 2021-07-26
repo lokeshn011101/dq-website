@@ -1,0 +1,27 @@
+{
+  "name": "dq-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "axios": "^0.21.1",
+    "next": "^10.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-scroll-parallax": "^2.4.0",
+    "react-select-material-ui": "^7.0.0",
+    "react-slick": "^0.28.1",
+    "react-smooth-collapse": "^2.1.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.15",
+    "tailwindcss": "^2.1.2"
+  }
+}

@@ -1,0 +1,13 @@
+.servicestile {
+  margin: 0 auto;
+  max-width: 1920px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    ),
+    url("../public/static/media/baloonsabout.png") !important;
+  background-position: 0 -120px;
+  background-repeat: repeat;
+  filter: grayscale(60%);
+}

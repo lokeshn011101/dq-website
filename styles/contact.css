@@ -1,0 +1,27 @@
+.contact {
+  height: 50rem;
+  background-image: url("../public/static/media/contact-bg.png");
+}
+.cn-form {
+  background: rgba(255, 255, 255, 0.8);
+}
+input[type="text"],
+textarea {
+  background: transparent;
+  outline: none;
+}
+.submit-button,
+.serv-link {
+  border-width: 2px;
+  border-color: #e89eab;
+}
+.css-9gakcf-option {
+  background-color: #e89eab !important;
+  color: black !important;
+}
+.css-1n7v3ny-option {
+  background-color: #feeff1 !important;
+}
+.ciicontact {
+  background-color: rgba(255, 255, 255, 0) !important;
+}

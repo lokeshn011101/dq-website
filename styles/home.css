@@ -1,0 +1,8 @@
+.b1,
+.b2,
+.b3 {
+  width: fit-content;
+}
+.hmeslider div {
+  cursor: default !important;
+}

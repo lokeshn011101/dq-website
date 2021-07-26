@@ -1,0 +1,31 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@font-face {
+  font-family: "Adelia";
+  src: url("../public/static/fonts/Adelia/Adelia.ttf");
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OstrichSans";
+  src: url("../public/static/fonts/OstrichSans/OstrichSans.otf");
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+html {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.css-1fkb66f-control,
+.css-1cpuf7w-control {
+  border: none !important;
+}
+.MuiFormLabel-root {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+  color: black !important;
+}
