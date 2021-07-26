@@ -1,0 +1,203 @@
+#wifi-loader {
+  --background: #d8b5bb;
+  --front-color: #e89eab;
+  --back-color: #d3b5bb;
+  --text-color: #4b3b3e;
+  width: 100%;
+  height: 64px;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wifi-loader svg {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wifi-loader svg circle {
+  position: absolute;
+  fill: none;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform: rotate(-100deg);
+  transform-origin: center;
+}
+#wifi-loader svg circle.back {
+  stroke: var(--back-color);
+}
+#wifi-loader svg circle.front {
+  stroke: var(--front-color);
+}
+#wifi-loader svg.circle-outer {
+  height: 86px;
+  width: 86px;
+}
+#wifi-loader svg.circle-outer circle {
+  stroke-dasharray: 62.75 188.25;
+}
+#wifi-loader svg.circle-outer circle.back {
+  animation: circle-outer 1.8s ease infinite 0.3s;
+}
+#wifi-loader svg.circle-outer circle.front {
+  animation: circle-outer 1.8s ease infinite 0.15s;
+}
+#wifi-loader svg.circle-middle {
+  height: 60px;
+  width: 60px;
+}
+#wifi-loader svg.circle-middle circle {
+  stroke-dasharray: 42.5 127.5;
+}
+#wifi-loader svg.circle-middle circle.back {
+  animation: circle-middle 1.8s ease infinite 0.25s;
+}
+#wifi-loader svg.circle-middle circle.front {
+  animation: circle-middle 1.8s ease infinite 0.1s;
+}
+#wifi-loader svg.circle-inner {
+  height: 34px;
+  width: 34px;
+}
+#wifi-loader svg.circle-inner circle {
+  stroke-dasharray: 22 66;
+}
+#wifi-loader svg.circle-inner circle.back {
+  animation: circle-inner 1.8s ease infinite 0.2s;
+}
+#wifi-loader svg.circle-inner circle.front {
+  animation: circle-inner 1.8s ease infinite 0.05s;
+}
+#wifi-loader .text {
+  position: absolute;
+  bottom: -50px;
+}
+#wifi-loader .text::before,
+#wifi-loader .text::after {
+  content: attr(data-text);
+}
+#wifi-loader .text::before {
+  color: var(--text-color);
+}
+#wifi-loader .text::after {
+  color: var(--front-color);
+  animation: text-animation 3.6s ease infinite;
+  position: absolute;
+  left: 0;
+}
+@keyframes circle-outer {
+  0% {
+    stroke-dashoffset: 25;
+  }
+  25% {
+    stroke-dashoffset: 0;
+  }
+  65% {
+    stroke-dashoffset: 301;
+  }
+  80% {
+    stroke-dashoffset: 276;
+  }
+  100% {
+    stroke-dashoffset: 276;
+  }
+}
+@keyframes circle-middle {
+  0% {
+    stroke-dashoffset: 17;
+  }
+  25% {
+    stroke-dashoffset: 0;
+  }
+  65% {
+    stroke-dashoffset: 204;
+  }
+  80% {
+    stroke-dashoffset: 187;
+  }
+  100% {
+    stroke-dashoffset: 187;
+  }
+}
+@keyframes circle-inner {
+  0% {
+    stroke-dashoffset: 9;
+  }
+  25% {
+    stroke-dashoffset: 0;
+  }
+  65% {
+    stroke-dashoffset: 106;
+  }
+  80% {
+    stroke-dashoffset: 97;
+  }
+  100% {
+    stroke-dashoffset: 97;
+  }
+}
+@keyframes text-animation {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  50% {
+    clip-path: inset(0);
+  }
+  100% {
+    clip-path: inset(0 0 0 100%);
+  }
+}
+
+/* tick animation */
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #e89eab;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #e89eab;
+  animation: fill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #e89eab;
+  }
+}

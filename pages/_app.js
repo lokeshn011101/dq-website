@@ -8,6 +8,7 @@ import "../styles/gallery.css";
 import "../styles/home.css";
 import "../styles/common.css";
 import "../styles/services.css";
+import "../styles/formSendLoader.css";
 import "../styles/contact.css";
 import "aos/dist/aos.css";
 
