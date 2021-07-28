@@ -29,3 +29,17 @@ html {
   line-height: 1.75rem !important;
   color: black !important;
 }
+
+.gal1{
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(247, 247, 247);
+  justify-content: center;
+
+
+
+}
+.gal1 img {
+  object-fit: cover;
+}

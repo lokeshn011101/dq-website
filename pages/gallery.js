@@ -5,6 +5,8 @@ import AOS from "aos";
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ImageGallaryComponent from "../components/ImageGallaryComponent";
+
 
 // const GallerySlider = () => {
 //   useEffect(() => {
@@ -85,62 +87,9 @@ const Gallery = () => {
     });
   }, []);
   return (
-    <div className="flex flex-col justify-center items-center my-10 mx-20">
-      <div className="flex flex-row justify-around items-center mb-6">
-        <div className="mr-6" data-aos="fade-right">
-          <div className="flex justify-start items-center">
-            <Image width={1026} height={828} src="/gallery-1.png" />
-          </div>
-        </div>
-        <div data-aos="fade-left">
-          <div className="flex justify-start items-center">
-            <Image width={574} height={828} src="/gallery-2.png" />
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-row justify-around items-center mb-6">
-        <div className="mr-6" data-aos="fade-right">
-          <div className="flex justify-start items-center">
-            <Image width={800} height={828} src="/gallery-3.png" />
-          </div>
-        </div>
-        <div data-aos="fade-left">
-          <div className="flex justify-start items-center">
-            <Image width={800} height={828} src="/gallery-4.png" />
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-row justify-around items-center mb-6">
-        <div>
-          <div className="flex justify-start items-center" data-aos="fade-up">
-            <Image width={1640} height={884} src="/gallery-5.png" />
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-row justify-around items-center mb-6">
-        <div className="mr-6" data-aos="fade-right">
-          <div className="flex justify-start items-center">
-            <Image width={574} height={828} src="/gallery-6.png" />
-          </div>
-        </div>
-        <div data-aos="fade-left">
-          <div className="flex justify-start items-center">
-            <Image width={1026} height={828} src="/gallery-7.png" />
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-row justify-around items-center mb-6">
-        <div className="mr-6" data-aos="fade-right">
-          <div className="flex justify-start items-center">
-            <Image width={800} height={828} src="/gallery-8.png" />
-          </div>
-        </div>
-        <div data-aos="fade-left">
-          <div className="flex justify-start items-center">
-            <Image width={800} height={828} src="/gallery-9.png" />
-          </div>
-        </div>
-      </div>
+    <div className="flex flex-col justify-center items-center my-10 mx-14">
+      <ImageGallaryComponent/>
+ 
       {/* {showModal ? (
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
