@@ -110,7 +110,7 @@ class ImageGallaryComponent extends React.Component {
                   enableLightbox={true}
                   maxRows={16}
                   margin={4}
-                  rowHeight={400}
+                  rowHeight={500}
                   backdropClosesModal
                   // currentImage={3}
                   // isOpen={ true}
