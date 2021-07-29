@@ -30,6 +30,7 @@ module.exports = {
         raleway: ["Raleway", "sans-serif"],
         adelia: ["Adelia"],
         ostrich: ["OstrichSans"],
+        qanelas: ["Qanelas"],
       },
       keyframes: {
         slide: {

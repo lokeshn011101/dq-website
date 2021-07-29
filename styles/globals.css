@@ -3,7 +3,7 @@
 @tailwind utilities; */
 @font-face {
   font-family: "Adelia";
-  src: url("../public/static/fonts/Adelia/Adelia.ttf");
+  src: url("../public/static/fonts/Adelia/Adelia.otf");
   font-style: normal;
   font-weight: 200;
   font-display: swap;
@@ -15,8 +15,18 @@
   font-weight: 200;
   font-display: swap;
 }
+@font-face {
+  font-family: "Qanelas";
+  src: url("../public/static/fonts/Qanelas/Qanelas.otf");
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
 html {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Qanelas", sans-serif !important;
+}
+body {
+  position: relative !important;
 }
 
 .css-1fkb66f-control,
@@ -24,8 +34,19 @@ html {
   border: none !important;
 }
 .MuiFormLabel-root {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Qanelas", sans-serif !important;
   font-size: 1.125rem !important;
   line-height: 1.75rem !important;
   color: black !important;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(232, 158, 171);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(232, 158, 171);
 }

@@ -22,3 +22,6 @@
     margin-bottom: 1.5rem;
   }
 }
+.gal-car {
+  z-index: 100 !important;
+}

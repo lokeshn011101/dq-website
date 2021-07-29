@@ -197,7 +197,7 @@ const Contact = () => {
               <input type="hidden" name="services" value={services}></input>
             </div>
             <div className="w-full message vsm:px-5 vsmm:flex vsmm:flex-col vsmm:justify-center vsmm:items-center ">
-              <div className="cmsg text-xl">Message</div>
+              <div className="cmsg italic text-xl">Message</div>
               <textarea
                 onChange={(e) => setMessage(e.target.value)}
                 type="text"

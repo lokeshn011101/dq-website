@@ -9,6 +9,7 @@ import "../styles/home.css";
 import "../styles/common.css";
 import "../styles/services.css";
 import "../styles/formSendLoader.css";
+import "../styles/gallerycarousel.css";
 import "../styles/contact.css";
 import "aos/dist/aos.css";
 
@@ -29,7 +30,7 @@ function Home({ Component, pageProps }) {
             __html: `
           @font-face {
             font-family: "Adelia";
-            src: url("../public/fonts/Adelia/Adelia.ttf");
+            src: url("../public/fonts/Adelia/Adelia.otf");
             font-style: normal;
             font-weight: 200;
             font-display: swap;
@@ -41,29 +42,17 @@ function Home({ Component, pageProps }) {
             font-weight: 200;
             font-display: swap;
           }
+          @font-face {
+            font-family: "Qanelas";
+            src: url("../public/fonts/Qanelas/Qanelas.otf");
+            font-style: normal;
+            font-weight: 200;
+            font-display: swap;
+          }
         `,
           }}
         />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="manifest" href="/manifest.json" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap"
-          rel="stylesheet"
-        />
         <title>Design Quotient</title>
       </Head>
       <Layout>
