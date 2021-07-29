@@ -50,3 +50,9 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(232, 158, 171);
 }
+.gal1 {
+  width: 90%;
+}
+.gal1 img {
+  object-fit: cover;
+}
