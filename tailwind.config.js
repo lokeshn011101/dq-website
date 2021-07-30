@@ -1,6 +1,7 @@
 module.exports = {
   // mode: "jit",
-  purge: ["./pages/**/*.js", "./components/**/*.js"],
+  purge: [],
+  // purge: ["./pages/**/*.js", "./components/**/*.js"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -28,9 +29,9 @@ module.exports = {
         montserrat: ["Montserrat", "sans-serif"],
         playfare: ["Playfair Display", "serif"],
         raleway: ["Raleway", "sans-serif"],
-        adelia: ["Adelia", "sans-serif"],
-        ostrich: ["Ostrich Sans", "sans-serif"],
-        qanelas: ["Qanelas", "sans-serif"],
+        adelia: ["Adelia"],
+        ostrich: ["OstrichSans"],
+        qanelas: ["Qanelas"],
       },
       keyframes: {
         slide: {

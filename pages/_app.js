@@ -12,7 +12,7 @@ import "../styles/formSendLoader.css";
 import "../styles/contact.css";
 import "aos/dist/aos.css";
 
-function Home({ Component, pageProps }) {
+const Home = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
@@ -24,22 +24,31 @@ function Home({ Component, pageProps }) {
         />
         <meta name="description" content="Where dreams come alive" />
         <meta name="keywords" content="Design Quotient" />
-        <link
-          href="http://fonts.cdnfonts.com/css/ostrich-sans-2"
-          rel="stylesheet"
-        />
-        <link href="http://fonts.cdnfonts.com/css/qanelas" rel="stylesheet" />
 
         <style
           dangerouslySetInnerHTML={{
-            __html: `
-          @font-face {
-            font-family: "Adelia";
-            src: url("../public/fonts/Adelia/Adelia.otf");
-            font-style: normal;
-            font-weight: 200;
-            font-display: swap;
-          }
+            __html: `    
+            @font-face {
+              font-family: "Adelia";
+              src: url("../public/static/fonts/Adelia/Adelia.woff") format("woff");
+              font-style: normal;
+              font-weight: 200;
+              font-display: swap;
+            }
+            @font-face {
+              font-family: "OstrichSans";
+              src: url("../public/static/fonts/OstrichSans/OstrichSans.woff") format("woff");
+              font-style: normal;
+              font-weight: 200;
+              font-display: swap;
+            }
+            @font-face {
+              font-family: "Qanelas";
+              src: url("../public/static/fonts/Qanelas/Qanelas.woff") format("woff");
+              font-style: normal;
+              font-weight: 200;
+              font-display: swap;
+            }
         `,
           }}
         />
@@ -51,5 +60,5 @@ function Home({ Component, pageProps }) {
       </Layout>
     </>
   );
-}
+};
 export default Home;

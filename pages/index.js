@@ -100,7 +100,7 @@ const Home = () => {
   const [winWidth, setWinWidth] = useState(0);
   const [x1, setX1] = useState(-10);
   const [x2, setX2] = useState(100);
-  const [y1, setY1] = useState(-90);
+  const [y1, setY1] = useState(-80);
   const [y2, setY2] = useState(-130);
   useEffect(() => {
     AOS.init({
@@ -204,7 +204,7 @@ services we offer and get in touch so we can discuss how to accommodate your req
               </div>
             </div>
           </Parallax>
-          <div className="pb-24 md:pt-28 sm:pt-30 smm:pt-24 bg-gray-200 flex flex-col justify-center items-center ">
+          <div className="homereviews pb-24 md:pt-28 sm:pt-30 smm:pt-24 flex flex-col justify-center items-center ">
             <HomeFooterItem
               comment='"Dhiya is My May angel. It’s been 6 years since I have known her and there is truly no better! She paints my vision so perfectly
 and brings them to reality every May on my son’s birthday! She looks into the finest detail and works towards it tirelessly.
