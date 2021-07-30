@@ -15,18 +15,12 @@ const About = () => {
       <div className={styles.bg}>
         <div className={styles.container}>
           <h1
-            className="title font-adelia text-center py-12 text-3xl "
+            className="title font-adelia text-center py-12 pt-16 text-3xl "
             data-aos="fade-left"
           >
             Meet Dhiya
           </h1>
           <div className={styles.person}>
-            {/* <img
-              src="/diya.png"
-              className={styles.image}
-              data-aos="fade-left"
-              data-aos-delay="500"
-            /> */}
             <div className="flex justify-start items-center mdd:w-full md:w-6/12 overflow-hidden">
               <div
                 className="flex justify-start items-center"
@@ -38,11 +32,16 @@ const About = () => {
                   width={656}
                   height={900}
                   className={styles.image}
+                  alt="Diya DQ"
                 />
               </div>
             </div>
             <div className={styles.content}>
-              <p data-aos="fade-right" data-aos-delay="500">
+              <p
+                className="text-xl leading-10 smm:leading-6 smm:text-base"
+                data-aos="fade-right"
+                data-aos-delay="500"
+              >
                 Each event is carefully designed and coordinated by our founder{" "}
                 <span className={styles.bold}>Dhiya D’Rosario </span>
                 Her strength is to take care of all the little things you hadn’t
@@ -82,11 +81,15 @@ const About = () => {
                   width={656}
                   height={900}
                   className={styles.image}
+                  alt="Roshan DQ"
                 />
               </div>
             </div>
             <div className={styles.content}>
-              <p data-aos="fade-right">
+              <p
+                className="text-xl leading-10 smm:leading-6 smm:text-base"
+                data-aos="fade-right"
+              >
                 The brain behind the business side of things here at DQ,{" "}
                 <span className={styles.bold}>Roshan Kalyan </span> takes care
                 of the logistics behind the whole operation and with her MBA

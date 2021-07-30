@@ -1,0 +1,30 @@
+@media (min-width: 769px) {
+  .gallery-segment {
+    margin-bottom: 1.5rem !important;
+  }
+  .gallery-container {
+    margin: 2.5rem 5rem !important;
+  }
+  .gallery-element {
+    margin-right: 1.5rem;
+  }
+}
+@media (max-width: 769px) {
+  .gallery-segment {
+    flex-direction: column;
+  }
+  .gallery-container {
+    margin: 0.5rem 2rem !important;
+  }
+  .gallery-element,
+  .gallery-element-2 {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .ge-top {
+    margin-top: 1rem;
+  }
+}
+.gal-car {
+  z-index: 100 !important;
+}

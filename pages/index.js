@@ -148,7 +148,7 @@ const Home = () => {
           data-aos-duration="2000"
         >
           <div className="w-full smm:w-7/12 flex justify-center items-center">
-            <Image src="/flow1.png" width={473} height={194} />
+            <Image src="/flow1.png" alt="flower" width={473} height={194} />
           </div>
         </div>
         <div>
@@ -168,7 +168,7 @@ services we offer and get in touch so we can discuss how to accommodate your req
           data-aos-duration="2000"
         >
           <div className="w-full smm:w-5/12 flex justify-center items-center">
-            <Image src="/flow2.png" width={192} height={157} />
+            <Image src="/flow2.png" alt="flower" width={192} height={157} />
           </div>
         </div>
 
@@ -188,14 +188,19 @@ services we offer and get in touch so we can discuss how to accommodate your req
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <Image src="/home-footer.png" width={1198} height={801} />
+              <Image
+                src="/home-footer.png"
+                alt="footer"
+                width={1198}
+                height={801}
+              />
             </div>
           </div>
 
           <Parallax className="custom-class" y={[x1, x2]} tagOuter="figure">
             <div className="flex justify-start items-end w-full lg:pl-30 md:pl-24 sm:pl-14 smm:pl-5">
               <div className="flex justify-start items-start lg:w-full md:w-8/12 sm:w-7/12 smm:w-3/12 z-0">
-                <Image src="/left.png" width={213} height={350} />
+                <Image src="/left.png" alt="comma" width={213} height={350} />
               </div>
             </div>
           </Parallax>
@@ -229,7 +234,7 @@ Thank you Dhiya for also always making it super easy and stressfree to plan birt
           <Parallax className="custom-class" y={[y1, y2]} tagOuter="figure">
             <div className="flex justify-end items-end w-full lg:pr-30 md:pr-24 sm:pr-14 smm:pr-5">
               <div className="flex justify-end items-end lg:w-full md:w-8/12 sm:w-7/12 smm:w-3/12 z-0">
-                <Image src="/right.png" width={213} height={350} />
+                <Image src="/right.png" alt="comma" width={213} height={350} />
               </div>
             </div>
           </Parallax>

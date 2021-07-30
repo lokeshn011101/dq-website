@@ -28,8 +28,9 @@ module.exports = {
         montserrat: ["Montserrat", "sans-serif"],
         playfare: ["Playfair Display", "serif"],
         raleway: ["Raleway", "sans-serif"],
-        adelia: ["Adelia"],
-        ostrich: ["OstrichSans"],
+        adelia: ["Adelia", "sans-serif"],
+        ostrich: ["Ostrich Sans", "sans-serif"],
+        qanelas: ["Qanelas", "sans-serif"],
       },
       keyframes: {
         slide: {

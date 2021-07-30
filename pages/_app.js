@@ -4,9 +4,11 @@ import "../styles/navbar.css";
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
 import "../styles/footer.css";
+import "../styles/gallery.css";
 import "../styles/home.css";
 import "../styles/common.css";
 import "../styles/services.css";
+import "../styles/formSendLoader.css";
 import "../styles/contact.css";
 import "aos/dist/aos.css";
 
@@ -22,35 +24,18 @@ function Home({ Component, pageProps }) {
         />
         <meta name="description" content="Where dreams come alive" />
         <meta name="keywords" content="Design Quotient" />
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+          href="http://fonts.cdnfonts.com/css/ostrich-sans-2"
           rel="stylesheet"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="http://fonts.cdnfonts.com/css/qanelas" rel="stylesheet" />
+
         <style
           dangerouslySetInnerHTML={{
             __html: `
           @font-face {
             font-family: "Adelia";
-            src: url("../public/fonts/Adelia/Adelia.ttf");
-            font-style: normal;
-            font-weight: 200;
-            font-display: swap;
-          }
-          @font-face {
-            font-family: "OstrichSans";
-            src: url("../public/fonts/OstrichSans/OstrichSans.otf");
+            src: url("../public/fonts/Adelia/Adelia.otf");
             font-style: normal;
             font-weight: 200;
             font-display: swap;
@@ -58,10 +43,7 @@ function Home({ Component, pageProps }) {
         `,
           }}
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap"
-          rel="stylesheet"
-        />
+        <link rel="manifest" href="/manifest.json" />
         <title>Design Quotient</title>
       </Head>
       <Layout>

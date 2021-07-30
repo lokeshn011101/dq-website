@@ -113,7 +113,7 @@ const Navbar = () => {
     ["#customised-packaging", "Customised Packaging"],
   ];
   return (
-    <nav className="navbaar sticky top-0 navbar-container w-full h-auto flex justify-end z-50">
+    <nav className="navbaar sticky top-0 navbar-container w-full h-auto flex justify-end">
       <div className="bg-white flex justify-center w-full  lg:items-end lg:flex-row shadow-sm">
         <div className="smm:ml-2 smm:w-4/12 lgg:w-3/12 lgg:h-auto w-2/12 h-full flex justify-center items-center lgg:items-end">
           <div className="nav-logo w-full flex justify-center items-center">
