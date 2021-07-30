@@ -19,7 +19,10 @@
   .gallery-element,
   .gallery-element-2 {
     padding: 0.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .ge-top {
+    margin-top: 1rem;
   }
 }
 .gal-car {

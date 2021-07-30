@@ -9,7 +9,6 @@ import "../styles/home.css";
 import "../styles/common.css";
 import "../styles/services.css";
 import "../styles/formSendLoader.css";
-import "../styles/gallerycarousel.css";
 import "../styles/contact.css";
 import "aos/dist/aos.css";
 
@@ -25,26 +24,18 @@ function Home({ Component, pageProps }) {
         />
         <meta name="description" content="Where dreams come alive" />
         <meta name="keywords" content="Design Quotient" />
+        <link
+          href="http://fonts.cdnfonts.com/css/ostrich-sans-2"
+          rel="stylesheet"
+        />
+        <link href="http://fonts.cdnfonts.com/css/qanelas" rel="stylesheet" />
+
         <style
           dangerouslySetInnerHTML={{
             __html: `
           @font-face {
             font-family: "Adelia";
             src: url("../public/fonts/Adelia/Adelia.otf");
-            font-style: normal;
-            font-weight: 200;
-            font-display: swap;
-          }
-          @font-face {
-            font-family: "OstrichSans";
-            src: url("../public/fonts/OstrichSans/OstrichSans.otf");
-            font-style: normal;
-            font-weight: 200;
-            font-display: swap;
-          }
-          @font-face {
-            font-family: "Qanelas";
-            src: url("../public/fonts/Qanelas/Qanelas.otf");
             font-style: normal;
             font-weight: 200;
             font-display: swap;

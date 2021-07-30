@@ -15,12 +15,10 @@ ol {
   display: flex;
 }
 
-.menu-item {
-  position: relative;
-}
 .menu-item a {
   display: block;
   color: #000;
+  border-bottom: solid #eeeeee 1px !important;
 }
 .navrenup li:first-child a {
   border-radius: 5px 5px 0 0 !important;
@@ -128,7 +126,7 @@ a {
 }
 .navvv a {
   display: block;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
@@ -170,8 +168,9 @@ a {
   clear: both;
 }
 .menu-item a {
-  padding: 0.5rem !important;
+  padding: 0.8rem !important;
 }
+
 .toggler::-webkit-scrollbar {
   display: none;
 }

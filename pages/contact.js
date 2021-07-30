@@ -24,7 +24,7 @@ const Dropdown = ({ setServices }) => {
   ];
 
   return (
-    <div className="ciiservice w-full h-10 bg-none border-2 border-black text-lg">
+    <div className="ciip ciiservice w-full h-10 bg-none border-2 border-black text-lg">
       <ReactSelectMaterialUi
         label={" "}
         options={options}
@@ -139,7 +139,7 @@ const Contact = () => {
                 <input
                   onChange={(e) => setName(e.target.value)}
                   type="text"
-                  className="ciiname w-full h-10 bg-none border-2 border-black text-lg"
+                  className="ciip ciiname w-full h-10 bg-none border-2 border-black text-lg"
                   name="name"
                   value={name}
                 />
@@ -152,7 +152,7 @@ const Contact = () => {
                     setInvalidPhone(false);
                   }}
                   type="tel"
-                  className="ciicontact w-full h-10 bg-none border-2 border-black text-lg"
+                  className="ciip ciicontact w-full h-10 bg-none border-2 border-black text-lg"
                   name="number"
                   value={contact}
                 />
@@ -174,7 +174,7 @@ const Contact = () => {
                     setEmailError(false);
                   }}
                   type="text"
-                  className="ciiemail w-full h-10 bg-none border-2 border-black text-lg"
+                  className="ciip ciiemail w-full h-10 bg-none border-2 border-black text-lg"
                   name="email"
                   value={email}
                 />
@@ -201,7 +201,7 @@ const Contact = () => {
               <textarea
                 onChange={(e) => setMessage(e.target.value)}
                 type="text"
-                className="cimsg lg:w-1/2 border-2 border-black text-lg"
+                className="ciip cimsg lg:w-1/2 border-2 border-black text-lg"
                 rows="8"
                 cols={winWidth > 425 ? "30" : "28"}
                 name="message"

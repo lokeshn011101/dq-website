@@ -8,22 +8,8 @@
   font-weight: 200;
   font-display: swap;
 }
-@font-face {
-  font-family: "OstrichSans";
-  src: url("../public/static/fonts/OstrichSans/OstrichSans.otf");
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Qanelas";
-  src: url("../public/static/fonts/Qanelas/Qanelas.otf");
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-}
 html {
-  font-family: "Qanelas", sans-serif !important;
+  font-family: Qanelas, sans-serif !important;
 }
 body {
   position: relative !important;
@@ -49,10 +35,4 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(232, 158, 171);
-}
-.gal1 {
-  width: 90%;
-}
-.gal1 img {
-  object-fit: cover;
 }
