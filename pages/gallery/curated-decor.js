@@ -17,13 +17,13 @@ const CuratedDecor = () => {
   }, [imageClick]);
 
   const images = [
-    "/cd1g1.png",
-    "/lw6g2cd2.png",
-    "/f6g4cd6.png",
-    "/f4cd4.png",
-    "/cd5.png",
-    "/f6g4cd6.png",
-    "/cd7.png",
+    "/images/cd1g1.jpg",
+    "/images/lw6g2cd2.jpg",
+    "/images/f3cd3.jpeg",
+    "/images/f4cd4.jpg",
+    "/images/cd5.jpeg",
+    "/images/f6g4cd6.jpeg",
+    "/images/cd7.jpg",
   ];
 
   return (

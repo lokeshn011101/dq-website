@@ -18,15 +18,15 @@ const Gallery = () => {
   }, [imageClick]);
 
   const images = [
-    "/images/cd1g1.png",
-    "/images/lw6g2cd2.png",
-    "/images/g3.png",
-    "/images/f6g4cd6.png",
-    "/images/kp5g5.png",
-    "/images/lw7g6.png",
-    "/images/f7g7.png",
-    "/images/td5g8.png",
-    "/images/g9.png",
+    "/images/cd1g1.jpg",
+    "/images/lw6g2cd2.jpg",
+    "/images/g3.jpeg",
+    "/images/f6g4cd6.jpeg",
+    "/images/kp5g5.jpeg",
+    "/images/lw7g6.jpg",
+    "/images/f7g7.jpg",
+    "/images/td5g8.jpeg",
+    "/images/g9.jpeg",
   ];
   return (
     <div>

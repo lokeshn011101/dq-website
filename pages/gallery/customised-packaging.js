@@ -18,11 +18,11 @@ const CustomisedPackaging = () => {
   }, [imageClick]);
 
   const images = [
-    "/images/cp1.png",
-    "/images/cp2.png",
-    "/images/cp3.png",
-    "/images/cp4.png",
-    "/images/cp5.png",
+    "/images/cp1.jpeg",
+    "/images/cp2.jpg",
+    "/images/cp3.jpeg",
+    "/images/cp4.jpg",
+    "/images/cp5.jpg",
   ];
   return (
     <div className="gallery-container flex flex-col justify-center items-start overflow-hidden">
