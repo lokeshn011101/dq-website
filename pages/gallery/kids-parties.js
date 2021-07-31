@@ -18,14 +18,14 @@ const KidsParties = () => {
   }, [imageClick]);
 
   const images = [
-    "/kp1.png",
-    "/kp2.png",
-    "/kp3.png",
-    "/kp4.png",
-    "/kp5.png",
-    "/kp6.png",
-    "/kp7.png",
-    "/kp8.png",
+    "/images/kp1td1.png",
+    "/images/kp2lw2.png",
+    "/images/kp3td3.png",
+    "/images/kp4.png",
+    "/images/kp5g5.png",
+    "/images/kp6.png",
+    "/images/kp7td7.png",
+    "/images/kp8td8.png",
   ];
   return (
     <div className="gallery-container flex flex-col justify-center items-center overflow-hidden">

@@ -18,14 +18,14 @@ const LuxuryWeddingDesign = () => {
   }, [imageClick]);
 
   const images = [
-    "/lw1.png",
-    "/lw2.png",
-    "/lw3.png",
-    "/lw4.png",
-    "/lw5.png",
-    "/lw6.png",
-    "/lw7.png",
-    "/lw8.png",
+    "/images/lw1.png",
+    "/images/kp2lw2.png",
+    "/images/lw3.png",
+    "/images/lw4.png",
+    "/images/lw5.png",
+    "/images/lw6g2cd2.png",
+    "/images/lw7g6.png",
+    "/images/lw8.png",
   ];
   return (
     <div className="gallery-container flex flex-col justify-center items-center overflow-hidden">
