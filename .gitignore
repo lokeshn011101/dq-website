@@ -14,9 +14,11 @@
 
 # production
 /build
+/.github
 
 # misc
 .DS_Store
+/firebase-debug.log
 
 # debug
 npm-debug.log*

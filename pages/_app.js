@@ -30,7 +30,7 @@ const Home = ({ Component, pageProps }) => {
             __html: `    
             @font-face {
               font-family: "Adelia";
-              src: url("../public/static/fonts/Adelia/Adelia.woff") format("woff");
+              src: url("https://firebasestorage.googleapis.com/v0/b/design-quotient.appspot.com/o/Adelia.woff?alt=media&token=8702c90e-f272-4726-8bc6-59b0b532c4fe") format("woff");
               font-style: normal;
               font-weight: 200;
               font-display: swap;
