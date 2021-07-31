@@ -53,3 +53,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(232, 158, 171);
 }
+.css-yt9ioa-option {
+  border-bottom: solid #eeeeee 1px !important;
+}
