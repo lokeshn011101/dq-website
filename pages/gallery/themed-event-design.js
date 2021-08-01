@@ -18,14 +18,14 @@ const ThemedEventDesign = () => {
   }, [imageClick]);
 
   const images = [
-    "/ted1.png",
-    "/ted2.png",
-    "/ted3.png",
-    "/ted4.png",
-    "/ted5.png",
-    "/ted6.png",
-    "/ted7.png",
-    "/ted8.png",
+    "/images/kp1td1.jpeg",
+    "/images/td2.jpeg",
+    "/images/kp3td3.jpeg",
+    "/images/td4.jpeg",
+    "/images/td5g8.jpeg",
+    "/images/td6.jpeg",
+    "/images/kp7td7.jpg",
+    "/images/kp8td8.jpeg",
   ];
   return (
     <div className="gallery-container flex flex-col justify-center items-center overflow-hidden">

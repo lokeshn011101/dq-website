@@ -26,7 +26,7 @@ const ServicesItem = ({ title, imgg, linkto, desc, idd }) => {
         className="services-image flex justify-center items-center"
         data-aos="fade-up"
       >
-        <div className="w-9/12 smm:w-full flex justify-center items-center">
+        <div className="w-8/12 smm:w-full flex justify-center items-center">
           <Image src={imgg} width={1640} height={900} alt="services-images" />
         </div>
       </div>
@@ -45,15 +45,15 @@ const ServicesItem = ({ title, imgg, linkto, desc, idd }) => {
         </div>
       </div>
       <div
-        className="services-flower flex justify-center items-center lg:my-16 md:my-14 sm:my-10 smm:my-8"
+        className="services-flower flex justify-center items-center lg:my-20 md:my-16 sm:my-12 smm:my-10 "
         data-aos="fade-in"
         data-aos-duration="2000"
       >
         <div className="lg:w-8/12 md:w-7/12 sm:w-6/12 smm:w-5/12 flex justify-center items-center">
           <Image
             src="/serv-flow.png"
-            width={426}
-            height={105}
+            width={304}
+            height={75}
             alt="services-images"
           />
         </div>
@@ -134,10 +134,14 @@ const Services = () => {
         className="services-description text-center lg:mt-14 md:mt-12 sm:mt-10 smm:mt-8 lg:w-8/12 md:w-9/12 sm:w-10/12 smm:w-11/12 md:leading-9 leading-6 md:text-lg text-base font-light mx-auto"
         data-aos="fade-up"
       >
-        We go beyond typical event planning and design services to bring your
-        visions to life for your special day. Read on to know what all we have
-        to offer! Get in touch, let’s have a ball taking your party to new
-        heights together!
+        <div>
+          We go beyond typical event planning and design services to bring your
+          visions to life for your special day.
+        </div>
+        <div>
+          Read on to know what all we have to offer! Get in touch, let’s have a
+          ball taking your party to new heights together!
+        </div>
       </div>
       <div
         className="services-flower flex justify-center items-center lg:my-16 md:my-14 sm:my-10 smm:my-8"
@@ -147,8 +151,8 @@ const Services = () => {
         <div className="lg:w-8/12 md:w-7/12 sm:w-6/12 smm:w-5/12 flex justify-center items-center">
           <Image
             src="/serv-flow1.png"
-            width={273}
-            height={312}
+            width={201}
+            height={230}
             alt="services-images"
           />
         </div>

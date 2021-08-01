@@ -18,13 +18,13 @@ const Floristry = () => {
   }, [imageClick]);
 
   const images = [
-    "/f1.png",
-    "/f2.png",
-    "/f3.png",
-    "/f4.png",
-    "/f5.png",
-    "/f6.png",
-    "/f7.png",
+    "/images/f1.jpg",
+    "/images/f2.jpg",
+    "/images/f3cd3.jpeg",
+    "/images/f4cd4.jpg",
+    "/images/f5.jpeg",
+    "/images/f6g4cd6.jpeg",
+    "/images/f7g7.jpg",
   ];
   return (
     <div className="gallery-container flex flex-col justify-center items-center overflow-hidden">

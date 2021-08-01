@@ -7,10 +7,11 @@ import FormSendSpinner from "../components/FormSendSpinner";
 import FormSendTick from "../components/FormSendTick";
 import { useRouter } from "next/router";
 
-const Dropdown = ({ setServices }) => {
+const Dropdown = ({ setServices, setServicesError }) => {
   const handleChange = (data) => {
     console.log(data);
     setServices(data);
+    setServicesError(false)
   };
 
   const options = [
@@ -158,7 +159,7 @@ const Contact = () => {
                 />
                 {invalidPhone ? (
                   <div className="text-red-500">
-                    Enter a valid Phone Number!
+                    Enter a valid Phone Number! (10 digits)
                   </div>
                 ) : (
                   <></>
@@ -191,7 +192,12 @@ const Contact = () => {
                   <div className="ciservice italic text-xl">
                     Select Service*
                   </div>
-                  <Dropdown setServices={setServices} />
+                  <Dropdown setServices={setServices} setServicesError={setServicesError} />
+                  {servicesError ? (
+                    <div className="text-red-500">Select a Service!</div>
+                  ) : (
+                    <></>
+                  )}
                 </div>
               </div>
               <input type="hidden" name="services" value={services}></input>

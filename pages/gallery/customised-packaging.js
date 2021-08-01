@@ -17,7 +17,13 @@ const CustomisedPackaging = () => {
     else document.body.style.overflow = "unset";
   }, [imageClick]);
 
-  const images = ["/cp2.png", "/cp1.png", "/cp3.png", "/cp4.png", "/cp5.png"];
+  const images = [
+    "/images/cp1.jpeg",
+    "/images/cp2.jpg",
+    "/images/cp3.jpeg",
+    "/images/cp4.jpg",
+    "/images/cp5.jpg",
+  ];
   return (
     <div className="gallery-container flex flex-col justify-center items-start overflow-hidden">
       <h1 className="headings text-center w-full mx-2 font-adelia mb-16 mt-10 mdd:mb-8 smm:text-xl mdd:text-2xl lgg:text-3xl text-4xl">
