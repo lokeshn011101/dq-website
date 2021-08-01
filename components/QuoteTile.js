@@ -24,7 +24,7 @@ const QuoteTile = ({
       data-aos="fade-in"
     >
       <div
-        className="text-base md:text-lg text-center lg:w-9/12 md:w-10/12 mdd:w-11/12 lg:pt-14 lg:pb-2 md:pt-10 md:pb-1 mdd:pt-8 mdd:pb-1 md:leading-10 leading-6"
+        className="text-base md:text-xl text-center lg:w-9/12 md:w-10/12 mdd:w-11/12 lg:pt-14 lg:pb-2 md:pt-10 md:pb-1 mdd:pt-8 mdd:pb-1 md:leading-10 leading-6"
         data-aos={data_aos_text}
         data-aos-delay={data_aos_text_delay}
       >

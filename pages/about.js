@@ -15,22 +15,22 @@ const About = () => {
       <div className={styles.bg}>
         <div className={styles.container}>
           <h1
-            className="title font-adelia text-center py-12 pt-16 text-3xl "
+            className="title font-adelia text-center py-12 pt-16 text-4xl "
             data-aos="fade-left"
           >
             Meet Dhiya
           </h1>
           <div className={styles.person}>
-            <div className="flex justify-start items-center mdd:w-full md:w-6/12 overflow-hidden">
+            <div className="flex justify-center items-center mdd:w-full md:w-6/12 overflow-hidden">
               <div
-                className="flex justify-start items-center"
+                className="flex justify-center items-center"
                 data-aos="fade-left"
                 data-aos-delay="500"
               >
                 <Image
                   src="/diya.png"
-                  width={656}
-                  height={900}
+                  width={510}
+                  height={700}
                   className={styles.image}
                   alt="Diya DQ"
                 />
@@ -43,7 +43,7 @@ const About = () => {
                 data-aos-delay="500"
               >
                 Each event is carefully designed and coordinated by our founder{" "}
-                <span className={styles.bold}>Dhiya D’Rosario </span>
+                <span className={styles.bold}>Dhiya D’Rosario. </span>
                 Her strength is to take care of all the little things you hadn’t
                 thought of with the best attention to detail in everything!
                 Dhiya has a degree in Visual communication, she then went on to
@@ -60,26 +60,34 @@ const About = () => {
               </p>
             </div>
           </div>
-          <img src="/flow2.png" className={styles.leaf} data-aos="fade-in" />
+          <div
+            className="homeflow flex justify-center items-center md:my-16 mdd:my-12 smm:my-8"
+            data-aos="fade-in"
+            data-aos-duration="2000"
+          >
+            <div className="w-full smm:w-5/12 flex justify-center items-center">
+              <Image src="/flow2.png" alt="flower" width={171} height={140} />
+            </div>
+          </div>
           <div className="overflow-hidden">
             <h1
-              className="title font-adelia text-center py-12 text-3xl "
+              className="title font-adelia text-center py-12 text-4xl "
               data-aos="fade-left"
             >
               and Roshan
             </h1>
           </div>
           <div className={styles.person}>
-            <div className="flex justify-start items-center mdd:w-full md:w-6/12 overflow-hidden">
+            <div className="flex justify-center items-center mdd:w-full md:w-6/12 overflow-hidden">
               <div
-                className="flex justify-start items-center"
+                className="flex justify-center items-center"
                 data-aos="fade-left"
                 data-aos-delay="500"
               >
                 <Image
                   src="/roshan.png"
-                  width={656}
-                  height={900}
+                  width={510}
+                  height={700}
                   className={styles.image}
                   alt="Roshan DQ"
                 />

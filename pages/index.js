@@ -117,7 +117,7 @@ const Home = () => {
         </div>
         <div className="section md:px-24 sm:px-10 smm:px-8 flex flex-col justify-center items-center">
           <div
-            className="text-3xl mb-10 md:mt-24 smm:mt-10 mt-16 flex flex-row smm:flex-col justify-center items-center"
+            className="text-4xl mb-14 md:mt-24 smm:mt-10 mt-16 flex flex-row smm:flex-col justify-center items-center"
             data-aos="fade-up"
           >
             <div className=" font-adelia">~</div>
@@ -128,7 +128,7 @@ const Home = () => {
             <div className=" font-adelia">~</div>
           </div>
           <div
-            className="text-center w-8/12 mdd:w-full md:leading-10 leading-6 md:text-lg text-base font-light"
+            className="text-center w-10/12 mdd:w-full md:leading-10 leading-6 md:text-xl text-base font-light"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -148,7 +148,7 @@ const Home = () => {
           data-aos-duration="2000"
         >
           <div className="w-full smm:w-7/12 flex justify-center items-center">
-            <Image src="/flow1.png" alt="flower" width={473} height={194} />
+            <Image src="/flow1.png" alt="flower" width={366} height={150} />
           </div>
         </div>
         <div>
@@ -168,13 +168,13 @@ services we offer and get in touch so we can discuss how to accommodate your req
           data-aos-duration="2000"
         >
           <div className="w-full smm:w-5/12 flex justify-center items-center">
-            <Image src="/flow2.png" alt="flower" width={192} height={157} />
+            <Image src="/flow2.png" alt="flower" width={171} height={140} />
           </div>
         </div>
 
         <div className="home-footer">
           <div
-            className="home-footer-title text-3xl mb-10 mt-16 flex flex-row smm:flex-col justify-center items-center"
+            className="home-footer-title text-4xl mb-14 mt-16 flex flex-row smm:flex-col justify-center items-center"
             data-aos="fade-up"
           >
             <div className=" font-adelia">~</div>
