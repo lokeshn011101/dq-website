@@ -19,16 +19,27 @@ const Footer = () => {
             src="/fb.png"
             alt="facebook"
             className="fb cursor-pointer w-8 h-8 mx-4"
+            onClick={() =>
+              window.location.assign(
+                "https://www.instagram.com/designquotient_dq/"
+              )
+            }
           />
           <img
             src="/insta.png"
             alt="insta"
             className="fb cursor-pointer w-8 h-8 mx-4"
+            onClick={() =>
+              window.location.assign(
+                "https://www.instagram.com/designquotient_dq/"
+              )
+            }
           />
           <img
             src="/mail.png"
             alt="mail"
             className="fb cursor-pointer w-10 h-6 mx-4"
+            onClick={() => window.open("mailto:designquotient.in@gmail.com")}
           />
         </div>
       </div>
