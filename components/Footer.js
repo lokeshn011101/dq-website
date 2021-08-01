@@ -39,7 +39,7 @@ const Footer = () => {
             src="/mail.png"
             alt="mail"
             className="fb cursor-pointer w-10 h-6 mx-4"
-            onClick={() => window.open("mailto:")}
+            onClick={() => window.open("mailto:designquotient.in@gmail.com")}
           />
         </div>
       </div>
