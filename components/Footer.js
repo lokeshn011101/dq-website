@@ -20,9 +20,7 @@ const Footer = () => {
             alt="facebook"
             className="fb cursor-pointer w-8 h-8 mx-4"
             onClick={() =>
-              window.location.assign(
-                "https://www.instagram.com/designquotient_dq/"
-              )
+              window.open("https://www.facebook.com/DQ.Dhiya/", "_blank")
             }
           />
           <img
@@ -30,8 +28,9 @@ const Footer = () => {
             alt="insta"
             className="fb cursor-pointer w-8 h-8 mx-4"
             onClick={() =>
-              window.location.assign(
-                "https://www.instagram.com/designquotient_dq/"
+              window.open(
+                "https://www.instagram.com/designquotient_dq/",
+                "_blank"
               )
             }
           />
