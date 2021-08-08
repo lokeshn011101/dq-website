@@ -13,13 +13,11 @@ const ServicesItem = ({ title, imgg, linkto, desc, idd }) => {
   return (
     <div className="services-item" id={idd}>
       <div
-        className="text-3xl flex flex-row smm:flex-col justify-center items-center lg:my-8 md:my-6 sm:my-5 smm:my-4"
+        className="lg:text-4xl md:text-3xl sm:text-2xl smm:text-2xl headings flex flex-row smm:flex-col justify-center items-center lg:my-8 md:my-6 sm:my-5 smm:my-4 font-adelia"
         data-aos="fade-up"
       >
         <div>~</div>
-        <div className="headings text-center mx-2 font-adelia lg:my-10 md:my-8 sm:my-7 smm:my-6">
-          {title}{" "}
-        </div>
+        <div className="headings text-center mx-2 font-adelia">{title}</div>
         <div>~</div>
       </div>
       <div
@@ -125,8 +123,12 @@ const Services = () => {
             height={973}
             alt="services-images"
           />
-          <div className="setxt absolute px-8 right-0 text-white font-adelia text-center lg:text-4xl md:text-2xl sm:text-xl smm:text-base ">
-            ~ Thoughtful and Authentic moments ~
+          <div className="setxt absolute px-8 right-0 text-white font-adelia text-center lg:text-3xl md:text-xl sm:text-xl smm:text-base flex sm:flex-row flex-col justify-center items-center ">
+            <div className="smm:mt-2">~</div>{" "}
+            <div className="sm:mx-2">Thoughtful</div>{" "}
+            <div className="smm:mt-2 sm:mx-2">and</div>{" "}
+            <div className="smm:mt-2 sm:mx-2">Authentic</div>{" "}
+            <div className="smm:mt-2 sm:mx-2">moments</div> <div>~</div>
           </div>
         </div>
       </div>

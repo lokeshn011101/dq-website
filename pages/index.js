@@ -117,13 +117,12 @@ const Home = () => {
         </div>
         <div className="section md:px-24 sm:px-10 smm:px-8 flex flex-col justify-center items-center">
           <div
-            className="text-4xl mb-14 md:mt-24 smm:mt-10 mt-16 flex flex-row smm:flex-col justify-center items-center"
+            className="lg:text-4xl md:text-3xl sm:text-2xl smm:text-2xl mb-14 md:mt-24 smm:mt-10 mt-16 flex flex-row smm:flex-col justify-center items-center"
             data-aos="fade-up"
           >
             <div className=" font-adelia">~</div>
-            <div className="headings text-center mx-2 smm:my-2 font-adelia">
-              {" "}
-              Where Dreams, Come Alive!{" "}
+            <div className="headings text-center mx-2 smm:my-2 font-adelia leading-10">
+              Where Dreams, Come Alive!
             </div>
             <div className=" font-adelia">~</div>
           </div>
@@ -174,7 +173,7 @@ services we offer and get in touch so we can discuss how to accommodate your req
 
         <div className="home-footer">
           <div
-            className="home-footer-title text-4xl mb-14 mt-16 flex flex-row smm:flex-col justify-center items-center"
+            className="home-footer-title lg:text-4xl md:text-3xl sm:text-2xl smm:text-2xl mb-14 mt-16 flex flex-row smm:flex-col justify-center items-center"
             data-aos="fade-up"
           >
             <div className=" font-adelia">~</div>

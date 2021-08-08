@@ -6,8 +6,13 @@
       rgba(255, 255, 255, 0.6) 0%,
       rgba(255, 255, 255, 0.6) 100%
     ),
-    url("https://firebasestorage.googleapis.com/v0/b/design-quotient.appspot.com/o/baloonsabout.webp?alt=media&token=ec002b94-bf32-4656-8b83-6fe679396626") !important;
-  background-position: 0 -120px;
+    url("https://firebasestorage.googleapis.com/v0/b/design-quotient.appspot.com/o/ba.webp?alt=media&token=65265a01-a14f-4b06-8e4d-089205654d41") !important;
+  background-position: 0px -300px;
   background-repeat: repeat;
   filter: grayscale(60%);
+}
+@media screen and (max-width: 850px) {
+  .servicestile {
+    background-position: -150px -300px;
+  }
 }
