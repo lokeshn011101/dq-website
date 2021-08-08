@@ -15,7 +15,7 @@ const About = () => {
       <div className={styles.bg}>
         <div className={styles.container}>
           <h1
-            className="title font-adelia text-center py-12 pt-16 text-4xl "
+            className="title font-adelia text-center py-12 pt-16 lg:text-4xl md:text-3xl sm:text-2xl smm:text-2xl headings"
             data-aos="fade-left"
           >
             Meet Dhiya
@@ -71,7 +71,7 @@ const About = () => {
           </div>
           <div className="overflow-hidden">
             <h1
-              className="title font-adelia text-center py-12 text-4xl "
+              className="title font-adelia text-center py-12 lg:text-4xl md:text-3xl sm:text-2xl smm:text-2xl headings"
               data-aos="fade-left"
             >
               and Roshan
