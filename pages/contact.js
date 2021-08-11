@@ -11,7 +11,7 @@ const Dropdown = ({ setServices, setServicesError }) => {
   const handleChange = (data) => {
     console.log(data);
     setServices(data);
-    setServicesError(false)
+    setServicesError(false);
   };
 
   const options = [
@@ -93,7 +93,7 @@ const Contact = () => {
     setFormSent(true);
     axios.defaults.headers.post["Content-Type"] = "application/json";
     const response = await axios.post(
-      "https://formsubmit.co/ajax/20b73f4f59f25fd014c136df72afcbe1",
+      "https://formsubmit.co/ajax/designquotient.in@gmail.com",
       {
         name: name,
         contact: contact,
@@ -192,7 +192,10 @@ const Contact = () => {
                   <div className="ciservice italic text-xl">
                     Select Service*
                   </div>
-                  <Dropdown setServices={setServices} setServicesError={setServicesError} />
+                  <Dropdown
+                    setServices={setServices}
+                    setServicesError={setServicesError}
+                  />
                   {servicesError ? (
                     <div className="text-red-500">Select a Service!</div>
                   ) : (
