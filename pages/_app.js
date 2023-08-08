@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
+import { Analytics } from '@vercel/analytics/react';
 import "../styles/navbar.css";
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
@@ -57,6 +58,7 @@ const Home = ({ Component, pageProps }) => {
       <Layout>
         <Component {...pageProps} />
       </Layout>
+      <Analytics />
     </>
   );
 };
